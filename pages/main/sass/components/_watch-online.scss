@@ -2,4 +2,37 @@
     background-image: url(/assets/image/Giant\ Panda-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 0 -80px;
+}
+
+.watch-online_wrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px 0 100px;
+}
+
+
+
+.watch-content__bg-circle {
+    position: relative;
+    margin-right: 108px;
+    margin-bottom: 60px;
+    width: 465px;
+    height: 465px;
+    border-radius: 50%;
+    background: $orange;
+}
+
+.watch-content__title {
+    @include font ($size: 10.6496rem, $weight: 600, $height: 8rem);
+    position: absolute;
+    left: 73px;
+    top: 74px;
+    margin: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-light;
+    >* {
+        color: $yellow;
+    }
 }
