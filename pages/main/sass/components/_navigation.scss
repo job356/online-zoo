@@ -1,0 +1,20 @@
+.navigation {
+    @include font ($size: 1.6rem, $weight: 400, $height: 2.2rem);
+    display: flex;
+    gap: 58px;
+    margin: 0px;
+    list-style: none;
+}
+
+.navigation__item {
+    color: $color-light;
+    text-decoration: none;
+    &_inactive {
+        background: $orange;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-emphasis-color: transparent;
+        pointer-events: none;
+    }
+}

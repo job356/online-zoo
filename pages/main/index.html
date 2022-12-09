@@ -5,24 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sass/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>Online-zoo</title>
 </head>
 <body>
-    <header>
-        <div class="wrapper">
-            <a class="logo" href="#">
-                <h1 class="logo__title">PetStory online</h1>
-                <object class="logo__svg" data="/assets/icons/bamboo-logo.svg" type="image/svg+xml"></object>
-            </a>
-            <nav class="header-navigation">
-                <ul class="navigation">
-                    <li class="navigation__item"><a href="#">About</a></li>
-                    <li class="navigation__item"><a href="#">Map</a></li>
-                    <li class="navigation__item"><a href="#">Zoos</a></li>
-                    <li class="navigation__item"><a href="/pages/donate/index.html">Donate</a></li>
-                    <li class="navigation__item"><a href="#">Contact us</a></li>
-                </ul>
-            </nav>
+    <header class="header">
+        <div class="wrapper header__wrapper">
+            <div class="logo-nav">
+                <a class="logo" href="#">
+                    <h1 class="logo__title">PetStory online</h1>
+                    <object class="logo__svg" data="/assets/icons/bamboo-logo.svg" type="image/svg+xml"></object>
+                </a>
+                <nav class="header-navigation">
+                    <ul class="navigation">
+                        <li><a class="navigation__item_inactive" href="#">About</a></li>
+                        <li><a class="navigation__item" href="#">Map</a></li>
+                        <li><a class="navigation__item" href="#">Zoos</a></li>
+                        <li><a class="navigation__item" href="/pages/donate/index.html">Donate</a></li>
+                        <li><a class="navigation__item" href="#">Contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
             <a class="header-copiright" href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks?node-id=126%3A0&t=DxLXn49EC3n57Pwa-0">Designed by ©</a>
         </div>
     </header>
@@ -38,21 +41,23 @@
             </div>
         </section>
         <section class="backstage">
-            <div class="layout-2-column">
-                <div class="backstage-image">
-                    <img src="/assets/image/backstage-image.jpg" alt="man in bamboo cap">
-                </div>
-                <div class="backstage-content">
-                    <h2 class="backstage-content__title">The Backstage of the Wilderness World.</h2>
-                    <p class="backstage-content__text">The site was founded on the basis of a volunteer movement to protect and care for animals.</p>
-                    <p class="backstage-content__subtitle">How it works </p>
-                    <p class="backstage-content__text"></p>
+            <div class="wrapper">
+                <div class="layout-2-column">
+                    <div class="backstage-image">
+                        <img src="/assets/image/backstage-image.jpg" alt="man in bamboo cap">
+                    </div>
+                    <div class="backstage-content">
+                        <h2 class="backstage-content__title">The Backstage of the Wilderness World.</h2>
+                        <p class="backstage-content__text">The site was founded on the basis of a volunteer movement to protect and care for animals.</p>
+                        <p class="backstage-content__subtitle">How it works </p>
+                        <p class="backstage-content__text"></p>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="pets">
             <object class="arrow-prew" data="/assets/icons/arrow_elips_prew.svg" type="image/svg+xml"></object>
-            <div class="warapper">
+            <div class="wrapper">
                 <div class="layout-3-column">
                     <div class="pet">
                         <div class="pet__border">

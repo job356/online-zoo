@@ -1,0 +1,16 @@
+.header {
+    padding: 14px 0;
+    background: #000000;
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+    gap: 63px;
+}
