@@ -344,6 +344,33 @@ h1 {
   top: 24.62px;
 }
 
+.button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.2rem;
+  padding: 16px 92px;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  color: #FFFFFF;
+  border-radius: 25px;
+}
+.button_feedback {
+  border-radius: 5px;
+}
+.button_donate {
+  border-radius: 5px;
+}
+.button:hover {
+  background: #E47209;
+}
+.button:active {
+  background: #4B9200;
+}
+
 .wrapper {
   max-width: 1160px;
   margin: auto;
@@ -399,6 +426,12 @@ h1 {
   line-height: 2.2rem;
   text-decoration: none;
   color: #FFFFFF;
+}
+
+.watch-online {
+  background-image: url(/assets/image/Giant\ Panda-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=style.css.map */

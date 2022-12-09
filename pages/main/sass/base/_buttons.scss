@@ -1,0 +1,22 @@
+.button {
+    @include font ($size: 1.6rem, $height: 2.2rem);
+    padding: 16px 92px;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+    background: $orange;
+    color: $color-light;
+    border-radius: 25px;
+    &_feedback {
+        border-radius: 5px;
+    }
+    &_donate {
+        border-radius: 5px;
+    }
+    &:hover {
+        background: #E47209;
+    }
+    &:active {
+        background: $green;
+    }
+}
