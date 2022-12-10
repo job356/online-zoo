@@ -1,0 +1,32 @@
+.backstage {
+    background-image: url(/assets/image/backgrounds/flower_foto1.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.backstage_wrapper {
+    padding: 140px 0 180px;
+}
+
+.backstage-content {
+    padding-left: 87px;
+}
+
+.backstage-content__title {
+    @include font ($size: 4.8rem, $weight: 400, $height: 5.8rem);
+    color: $black_blue;
+    margin: 0 0 17px;
+}
+
+.backstage-content__subtitle {
+    @include font ($size: 2.4rem, $weight: 400, $height: 2.9rem);
+    color: $black_blue;
+    margin: 54px 0 34px 0;
+}
+
+.backstage-content__text {
+    @include font ($size: 1.6rem, $weight: 400, $height: 2.2rem);
+    color: $black_blue;
+    margin: 0px;
+}
+

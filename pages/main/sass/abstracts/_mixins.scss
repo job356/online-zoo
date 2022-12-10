@@ -5,3 +5,8 @@
     font-weight: $weight;
     line-height: $height;
 }
+
+@mixin column {
+    display: flex;
+    justify-content: space-between;
+}
