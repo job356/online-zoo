@@ -10,3 +10,9 @@
     display: flex;
     justify-content: space-between;
 }
+
+@mixin border-gradient ($color, $radius) {
+    background: $color;
+    border-radius: $radius;
+    padding: 1px;
+}

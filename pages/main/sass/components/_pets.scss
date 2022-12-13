@@ -1,0 +1,46 @@
+.pets {
+    position: relative;
+    background-image: url(/assets/image/backgrounds/palm_foto.jpg), url(/assets/image/backgrounds/strelitzia\ 1.jpg);
+    background-repeat: no-repeat;
+    background-position: left bottom, right bottom;
+    
+}
+
+.wrapper__pets {
+    padding-bottom: 100px;
+}
+
+.pet__border {
+    @include border-gradient ($color: $orange, $radius: 5px);
+}
+
+.pet__img {
+    display: block;
+    border-radius: 5px 5px 0 0;
+}
+
+.pet__description {
+    padding: 8px 16px 14px;
+    border-radius: 0 0 5px 5px;
+    background: $color-light;
+    &_herbivorous {
+        background-image: url(/assets/icons/banana-bamboo_icon.svg);
+        background-repeat: no-repeat;
+        background-position: 321px 10px;
+    }
+    &_carnivorous {
+        background-image: url(/assets/icons/meet-fish_icon.svg);
+        background-repeat: no-repeat;
+        background-position: 310px 10px;
+    }
+}
+
+.pet__name {
+    @include font ($size: 1.6rem, $height: 2.2rem);
+    margin: 0px;
+}
+
+.pet__native {
+    @include font ($size: 1.5rem, $weight: 300, $height: 1.8rem);
+    margin: 0px;
+}

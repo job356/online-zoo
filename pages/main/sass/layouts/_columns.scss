@@ -1,3 +1,10 @@
 .layout-2-column {
     @include column;
 }
+
+.layout-3-column {
+    @include column;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 80px;
+}
