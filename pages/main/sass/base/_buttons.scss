@@ -1,6 +1,7 @@
 .button {
     @include font ($size: 1.6rem, $height: 2.2rem);
-    padding: 16px 92px;
+    width: 298px;
+    padding: 16px 0;
     border: none;
     text-align: center;
     text-transform: uppercase;
@@ -18,6 +19,14 @@
     }
     &_donate {
         border-radius: 5px;
+    }
+    &_subscribe {
+        width: 129px;
+        padding: 10px 39px;
+        border: 1px solid #333B41;
+        border-radius: 5px;
+        background: #F1F3F2;
+        color: #000000;
     }
     &:hover {
         background: #E47209;

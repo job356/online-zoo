@@ -268,55 +268,45 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div class="wrapper">
-            <div class="layout-3-column">
+    <footer class="footer">
+        <div class="wrapper wrapper_footer">
+            <div class="footer-column">
                 <div class="footer-contact">
-                    <a class="logo" href="#">
-                        <h1 class="logo__title">PetStory online</h1>
-                        <object class="logo__svg" data="/assets/icons/bamboo-logo.svg" type="image/svg+xml"></object>
-                    </a>
+                    <div class="footer-logo">
+                        <a class="logo" href="#">
+                            <h1 class="logo__title">PetStory online</h1>
+                            <object class="logo__svg" data="/assets/icons/bamboo-logo.svg" type="image/svg+xml"></object>
+                        </a>
+                    </div>
                     <form action="/pages/donate/index.html">
                         <button class="button button_donate">donate for volunteers</button>
                     </form>
                     <div class="social-media">
-                        <a class="social-media__link" href="">
-                            <span class="facebook-icon">
-                                <object data="/assets/icons/social-media/facebook_icon.svg" type="image/svg+xml"></object>
-                            </span>
-                        </a>
-                        <a class="social-media__link" href="">
-                            <span class="twitter-icon">
-                                <object data="/assets/icons/social-media/twitter_icon.svg" type="image/svg+xml"></object>
-                            </span>
-                        </a>
-                        <a class="social-media__link" href="">
-                            <span class="instagram-icon">
-                                <object data="/assets/icons/social-media/instagram_icon.svg" type="image/svg+xml"></object>
-                            </span>
-                        </a>
-                        <a class="social-media__link" href="">
-                            <span class="you-tube-icon">
-                                <object data="/assets/icons/social-media/youtube_icon.svg" type="image/svg+xml"></object>
-                            </span>
-                        </a>
+                        <a class="social-media__link facebook-icon" href=""></a>
+                        <a class="social-media__link twitter-icon" href=""></a>
+                        <a class="social-media__link instagram-icon" href=""></a>
+                        <a class="social-media__link you-tube-icon" href=""></a>
                     </div>
                 </div>
                 <nav class="footer-navigation">
-                    <ul class="navigation">
-                        <li class="navigation__item_footer"><a href="#">About</a></li>
-                        <li class="navigation__item_footer"><a href="#">Map</a></li>
-                        <li class="navigation__item_footer"><a href="#">Zoos</a></li>
-                        <li class="navigation__item_footer"><a href="/pages/donate/index.html">Donate</a></li>
-                        <li class="navigation__item_footer"><a href="#">Contact us</a></li>
+                    <ul class="navigation navigation_footer">
+                        <li><a class="navigation__item_inactive" href="#">About</a></li>
+                        <li><a class="navigation__item" href="#">Map</a></li>
+                        <li><a class="navigation__item" href="#">Zoos</a></li>
+                        <li><a class="navigation__item" href="/pages/donate/index.html">Donate</a></li>
+                        <li><a class="navigation__item" href="#">Contact us</a></li>
                     </ul>
                 </nav>
                 <div class="footer-subscribe">
-                    <form class="subscribe" action="#">
+                    <div class="subscribe">
                         <p class="subscribe__title">Subscribe to our news</p>
-                        <input class="subscribe__input" type="email" placeholder="Enter your email">
-                        <button class="button button_subscribe">Submit</button>
-                    </form>
+                        <form class="subscribe__form" action="#">
+                            <div class="subscribe__input_border">
+                                <input class="subscribe__input" type="email" placeholder="Enter your email">
+                            </div>
+                            <button class="button button_subscribe">Submit</button>
+                        </form>
+                    </div>
                     <p class="footer-copirights">
                         Designed by Alisa Samborskaya<br>
                         ©RSSchool & ©Yem Digital 2021

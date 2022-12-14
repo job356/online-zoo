@@ -24,3 +24,7 @@
         flex-basis: 23.1%;
     }
 }
+
+.footer-column {
+    @include column;
+}
