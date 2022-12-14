@@ -7,12 +7,10 @@
     background: $orange;
     color: $color-light;
     border-radius: 25px;
+    display: block;
+    margin: 0 auto;
     &_watch-online {
         margin-left: 167px;
-    }
-    &_favorite {
-        display: block;
-        margin: 0 auto;
     }
     &_feedback {
         border-radius: 5px;

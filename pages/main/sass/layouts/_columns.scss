@@ -8,3 +8,10 @@
     gap: 20px;
     padding-bottom: 80px;
 }
+
+.layout-5-column {
+    @include column;
+    gap: 30px;
+    justify-content: center;
+    padding-bottom: 60px;
+}

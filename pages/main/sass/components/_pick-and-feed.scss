@@ -1,0 +1,50 @@
+.pick-and-feed {
+    background: $orange_gradient;
+    opacity: 0.9;
+    padding-bottom: 100px;
+}
+
+.wrapper_pick-and-feed {
+    background: $frosted_glass_white;
+    border-radius: 20px;
+    padding-bottom: 59px;
+}
+
+.pick-and-feed-content {
+    padding: 41px 0 0 99px;
+}
+
+.pick-and-feed__title {
+    @include font ($size: 4.8rem, $weight: 400, $height: 5.8rem);
+    text-align: center;
+    margin: 0px;
+    color: #FE9013;
+}
+
+.pick-and-feed__text {
+    color: $black_blue;
+    &_regular {
+        @include font ($size: 2.4rem, $weight: 400, $height: 2.9rem);
+        margin: 30px 0 40px;
+    }
+    &_medium {
+        @include font ($size: 1.6rem, $weight: 500, $height: 2.1rem);
+        margin: 0 0 10px;
+    }
+    &_simple {
+        @include font ($size: 1.6rem, $weight: 400, $height: 2.1rem);
+        margin: 0px;
+        >* {
+            color: $black_blue;
+            text-decoration-color: #FE9013;
+        }
+    }
+}
+
+.pick-an-feed__subtitle {
+    @include font ($size: 3.6rem, $weight:400, $height: 4.7rem);
+    color: $black_blue;
+    text-align: center;
+    margin: 60px 0 40px;
+}
+
