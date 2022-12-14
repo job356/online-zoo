@@ -15,3 +15,12 @@
     justify-content: center;
     padding-bottom: 60px;
 }
+
+.layout-4-column {
+    @include column;
+    gap: 30px;
+    padding-bottom: 21px;
+    >* {
+        flex-basis: 23.1%;
+    }
+}

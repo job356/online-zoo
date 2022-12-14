@@ -1,0 +1,36 @@
+.range {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 31px;
+}
+
+.range__border {
+    width: 599px;
+    position: relative;
+    height: 8px;
+    background: $pink_gradient;
+    padding: 1px;
+    border-radius: 5px;
+}
+
+.thumb {
+    position: absolute;
+    margin: 0%;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 599px;
+    height: 8px;
+    border-radius: 5px;  
+    background: #F5F7F6;
+    outline: none;
+  }
+  
+  .thumb::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 115.19px;
+    height: 8px;
+    border-radius: 5px; 
+    background: #FE9013;
+    cursor: pointer;
+  }
