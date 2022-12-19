@@ -812,7 +812,7 @@ h1 {
 .pick-and-feed {
   background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
   opacity: 0.9;
-  padding-bottom: 100px;
+  padding: 69px 0 100px;
 }
 
 .wrapper_pick-and-feed {
@@ -906,12 +906,13 @@ h1 {
 .user {
   display: flex;
   gap: 10px;
-  padding: 15px 16px 10px;
+  padding: 15px 0 10px;
 }
 
 .testimonial__content {
   background: #F1F3F2;
   border-radius: 20px;
+  padding: 0 15px 19px;
 }
 
 .user__icon {
@@ -945,7 +946,6 @@ h1 {
   line-height: 1.8rem;
   height: 309px;
   margin: 0px;
-  padding: 0px 15px;
   color: #767474;
   overflow: scroll;
 }
