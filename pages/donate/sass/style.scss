@@ -1,4 +1,21 @@
-h1 {
-    color: red;
-    border: 1px solid black;
-}
+@import "base/normalize";
+
+//abstracts
+@import "abstracts/mixins";
+@import "abstracts/constants";
+
+//base
+@import "base/base";
+@import "base/button";
+@import "base/icons";
+@import "base/logo";
+
+//layout
+@import "layout/wrapper";
+@import "layout/column";
+@import "layout/header";
+@import "layout/footer.scss";
+
+//components
+@import "components/header-copiright";
+@import "components/navigation.scss";

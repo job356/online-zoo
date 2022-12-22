@@ -1,0 +1,53 @@
+.step__border {
+    background: $orange;
+    padding: 1px;
+    border-radius: 5px;
+}
+
+.step__icon {
+    width: 168px;
+    height: 168px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: $color-light;
+}
+
+.step__caption {
+    width: 168px;
+}
+
+.icon-next {
+    padding-top: 62px;
+}
+
+.social-media__link {
+    width: 111px;
+    height: 26px;
+    background-repeat: no-repeat;
+    &.facebook-icon {
+        background-image: url(/assets/icons/social-media/facebook_icon.svg);
+        &:hover {
+            background-image: url(/assets/icons/social-media/facebook_icon_hover.svg);
+        }
+    }
+    &.twitter-icon {
+        background-image: url(/assets/icons/social-media/twitter_icon.svg);
+        &:hover {
+            background-image: url(/assets/icons/social-media/twitter_icon_hover.svg);
+        }
+    }
+    &.instagram-icon {
+        background-image: url(/assets/icons/social-media/instagram_icon.svg);
+        &:hover {
+            background-image: url(/assets/icons/social-media/instagram_icon_hover.svg);
+        }
+    }
+    &.you-tube-icon {
+        background-image: url(/assets/icons/social-media/youtube_icon.svg);
+        &:hover {
+            background-image: url(/assets/icons/social-media/youtube_icon_hover.svg);
+        }
+    }
+}

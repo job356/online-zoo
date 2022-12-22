@@ -1,0 +1,18 @@
+@mixin font ($family: 'Roboto', $style: normal, $size, $weight: 500, $height) {
+    font-family: $family;
+    font-style: $style;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+}
+
+@mixin column {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin border-gradient ($color, $radius) {
+    background: $color;
+    border-radius: $radius;
+    padding: 1px;
+}
