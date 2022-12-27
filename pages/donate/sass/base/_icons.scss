@@ -26,6 +26,7 @@
     width: 111px;
     height: 26px;
     background-repeat: no-repeat;
+    @extend %transition;
     &.facebook-icon {
         background-image: url(/assets/icons/social-media/facebook_icon.svg);
         &:hover {

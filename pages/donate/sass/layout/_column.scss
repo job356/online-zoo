@@ -1,3 +1,10 @@
+.layout-2-column {
+    @include column;
+    justify-content: center;
+    gap: 64px;
+    padding-bottom: 48px
+} 
+
 .footer-column {
     @include column;
 }

@@ -3,6 +3,7 @@
 //abstracts
 @import "abstracts/mixins";
 @import "abstracts/constants";
+@import "abstracts/placeholders";
 
 //base
 @import "base/base";
@@ -19,3 +20,7 @@
 //components
 @import "components/header-copiright";
 @import "components/navigation.scss";
+@import "components/donate";
+@import "components/amount-input";
+@import "components/another-amount";
+@import "components/periodicity";

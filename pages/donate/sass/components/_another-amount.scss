@@ -1,0 +1,44 @@
+.another-amount {
+    position: relative;
+    padding-bottom: 25px;
+}
+
+.another-amount__icon {
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    top: 17px;
+    right: 10px;
+    background-image: url(/assets/icons/donate-icons/dollar-another-amount.svg);
+}
+
+.another-amount__input {
+    @include font ($size: 1.6rem, $weight: 400, $height: 2.2rem);
+    color: #4B9200;
+    padding: 15px 75px 15px 9px;
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid #929699;
+    border-radius: 2px;
+    outline: none;
+    @extend %transition;
+    &::placeholder {
+        @include font ($size: 1.6rem, $weight: 400, $height: 2.2rem);
+        color: #929699;
+    }
+    &:focus {
+        border: 1px solid #4B9200;
+    }
+    &:focus + .another-amount__icon {
+        @extend %transition;
+        background-image: url(/assets/icons/donate-icons/dollar-another-amount-focus.svg);
+    }
+    &:focus::-webkit-input-placeholder {
+        color: #4B9200;
+    }
+}
+
+.another-amount__input::-webkit-outer-spin-button,
+.another-amount__input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+}

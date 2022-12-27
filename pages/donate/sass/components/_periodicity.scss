@@ -1,0 +1,29 @@
+.periodicity {
+    display: flex;
+    gap: 50px;
+    padding-bottom: 30px;
+}
+
+.radio-periodicity {
+    width: 16px;
+    height: 16px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+
+    cursor: pointer;
+
+    border-radius: 50%;
+    border: 1px solid #FE9013;
+    &:checked {
+        border: none;
+        background: #4B9200;
+        @extend %transition;
+    }
+  }
+
+  .radio-periodicity__label {
+    @include font ($size: 1.6 rem, $weight: 400, $height: 2.2rem);
+  }

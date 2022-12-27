@@ -1,0 +1,72 @@
+.donate {
+    padding: 40px 0 180px;
+    background: $orange-gradient;
+}
+
+.donate__info-title {
+    @include font ($size: 3.6rem, $weight: 400, $height: 4.7rem);
+    margin: 0 0 10px;
+    text-align: center;
+    color: $color-light;
+}
+
+.donate__info-text {
+    @include font ($size: 1.6 rem, $weight: 500, $height: 2.2rem);
+    margin: 0 0 40px;
+    color: $color-light;
+}
+
+.donate__info-subtitle {
+    @include font ($size: 3.6rem, $weight: 400, $height: 4.7rem);
+    margin: 0 0 60px;
+    color: #FE9013;
+}
+
+.donate-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 0 62px;
+    background: rgba(255, 255, 255, 0.52);
+    border-radius: 20px;
+    >* {
+        align-self: center;
+    }
+}
+
+.donate-content__title {
+    @include font ($size: 4.8rem, $weight: 400, $height: 5.8rem);
+    margin: 0px;
+    color: #FE9013;
+}
+
+.donate-content__subtitle {
+    @include font ($size: 2.4rem, $weight: 400, $height: 2.9rem);
+    margin: 20px 0 60px;
+    color: $black_blue;
+}
+
+.amount {
+    position: relative;
+}
+
+.amount-values__days {
+    @include font ($size: 7.2rem, $weight:500, $height: 5.8rem);
+    margin: 105px 0 11px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.amount-values__caption {
+    @include font ($size: 1.6rem, $weight: 400, $height: 2.2rem);
+    margin: 0px;
+    text-align: center;
+    color: $black_blue;
+}
+
+.amount-values__x-icon {
+    position: absolute;
+    top: 130px;
+    left: 170px;
+}

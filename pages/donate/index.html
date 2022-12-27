@@ -56,9 +56,6 @@
                         <p class="amount-input__title">Amount</p>
                         <div class="amount-input__background">
                             <div class="amount-input__line">
-                                <!-- <span>
-                                    <input class="amount-input__radio" id="5000" name="radio" type="radio"><br><label for="5000">5000</label>
-                                </span> -->
                                 <input class="amount-input__radio" name="radio" type="radio">
                                 <input class="amount-input__radio" name="radio" type="radio">
                                 <input class="amount-input__radio" name="radio" type="radio" checked>
@@ -96,8 +93,11 @@
                             </span>
                         </div>
                     </div>
-                    <input class="another-amount" type="number" placeholder="Another amount" onkeypress="this.value=this.value.substring(0,4);">
-                    <div class="period">
+                    <div class="another-amount">
+                        <input class="another-amount__input" type="number" placeholder="Another amount" onkeypress="this.value=this.value.substring(0,4);">
+                        <span class="another-amount__icon"></span>
+                    </div>
+                    <div class="periodicity">
                         <div class="monthly">
                             <input type="radio" class="radio-periodicity" name="periodicity">
                             <label class="radio-periodicity__label" for="monthly">Monthly</label>
@@ -107,8 +107,8 @@
                             <label class="radio-periodicity__label" for="once">Once</label>
                         </div>
                     </div>
-                    <button class="button button_donate">Feed a friend now</button>
-                    <p>Share with your friends on social networks</p>
+                    <button class="button button_feed">Feed a friend now</button>
+                    <p class="button__subtitle">Share with your friends on social networks</p>
                 </div>
             </div>
         </section>

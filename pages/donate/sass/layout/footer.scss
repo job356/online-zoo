@@ -29,6 +29,9 @@
     background: $orange;
     border-radius: 2px;
     padding: 1px;
+    &:focus-within {
+        background: #4B9200;
+    }
 }
 
 .subscribe__input {
@@ -38,6 +41,8 @@
     border-radius: 2px;
     background: #111115;
     color: #BDBDBD;
+    outline: none;
+    border: none;
 }
 
 .subscribe__form {
