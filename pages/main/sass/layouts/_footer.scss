@@ -29,6 +29,9 @@
     background: $orange;
     border-radius: 2px;
     padding: 1px;
+    &:focus-within {
+        background: #4B9200;
+    }
 }
 
 .subscribe__input {
@@ -37,6 +40,7 @@
     border: none;
     border-radius: 2px;
     background: #111115;
+    outline: none;
     color: #BDBDBD;
 }
 
@@ -50,5 +54,13 @@
     color: $color-light;
     margin: 0px;
     align-self: flex-end;
+    &:hover {
+        background: $orange;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-emphasis-color: transparent;
+        @extend %transition;
+    }
 }
 

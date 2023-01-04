@@ -23,6 +23,7 @@
 }
 
 .amount-input__radio {
+    position: relative;
     height: 10px;
     width: 10px;
 
@@ -37,6 +38,14 @@
     border: none;
 
     background: #FFEE2E;
+    &:checked {
+        &::after {
+            content: url(/assets/icons/donate-icons/roller_icon.svg);
+            position: absolute;
+            top: -15px;
+            left: -15px;
+        }
+    }
 }
 
 .amount-price {
@@ -50,7 +59,6 @@
         background-image: url(/assets/icons/donate-icons/dollar.svg);
         background-repeat: no-repeat;
         background-position: 0 50%;
-
     }
 }
 
@@ -59,4 +67,7 @@
     text-transform: uppercase;
     color: #333B41;
     margin: 0px;
+    &:checked {
+        color: #FE9013;
+    }
 }
