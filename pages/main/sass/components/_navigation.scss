@@ -5,6 +5,9 @@
     margin: 0px;
     list-style: none;
     padding: 0px;
+    @include media-small-desktop {
+        gap: 48px;
+    }
 }
 
 .navigation__item {

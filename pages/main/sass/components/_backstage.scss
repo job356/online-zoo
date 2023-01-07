@@ -2,14 +2,23 @@
     background-image: url(/assets/image/backgrounds/flower_foto1.jpg);
     background-repeat: no-repeat;
     background-position: right top;
+    @include media-small-desktop {
+        background-image: none;
+    }
 }
 
 .backstage_wrapper {
     padding: 140px 0 180px;
+    @include media-small-desktop {
+        padding: 100px 30px 142px;
+    }
 }
 
 .backstage-content {
     padding-left: 87px;
+    @include media-small-desktop {
+        padding-left: 31px;
+    }
 }
 
 .backstage-content__title {

@@ -12,6 +12,9 @@
     margin: 0 auto;
     &_watch-online {
         margin-left: 167px;
+        @include media-small-desktop {
+            margin: 0 auto;
+        }
     }
     &_feedback {
         border-radius: 5px;
@@ -36,26 +39,35 @@
     }
 }
 
-.button-control {
+.button-control-position {
     position: absolute;
-        padding: 22px 22px;
-        border-radius: 50%;
-        border: none;
-        background: $orange;
-        &:hover {
-            background: #E47209;
-        }
-        &:active {
-            background: $green;
-        }
-        &_prew {
-            top: 408px;
-            left: 138px;
-        }
-        &_next {
-            top: 408px;
-            right: 138px;
-        }
+    left: -82px;
+    top: 408px;
+    @include media-small-desktop {
+        top: 369px;
+        left: 353px;
+    }
+}
+
+.button-control-line {
+    display: flex;
+    gap: 1198px;
+    @include media-small-desktop {
+        gap: 171px;
+    }
+}
+
+.button-control {
+    padding: 22px 22px;
+    border-radius: 50%;
+    border: none;
+    background: $orange;
+    &:hover {
+        background: #E47209;
+    }
+    &:active {
+        background: $green;
+    }
 }
 
 .button_subscribe {

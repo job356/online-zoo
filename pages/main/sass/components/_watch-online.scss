@@ -9,6 +9,9 @@
     display: flex;
     justify-content: flex-end;
     padding: 12px 0 100px;
+    @include media-small-desktop {
+        padding: 0 30px 47px;
+    }
 }
 
 
@@ -21,6 +24,12 @@
     height: 465px;
     border-radius: 50%;
     background: $orange;
+    @include media-small-desktop {
+        width: 367px;
+        height: 367px;
+        margin-right: 147px;
+        margin-bottom: 47px;
+    }
 }
 
 .watch-content__title {
@@ -34,5 +43,10 @@
     color: $color-light;
     >* {
         color: $yellow;
+    }
+    @include media-small-desktop {
+        @include font ($size: 8.5rem, $weight: 700, $height: 6.4rem);
+        top: 54px;
+        left: 58px;
     }
 }

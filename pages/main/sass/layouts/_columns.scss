@@ -7,6 +7,10 @@
     flex-wrap: wrap;
     gap: 20px;
     padding-bottom: 80px;
+    @include media-small-desktop {
+        gap: 92px 20px;
+        justify-content: center;
+    }
 }
 
 .layout-5-column {

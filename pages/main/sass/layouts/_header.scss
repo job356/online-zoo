@@ -1,6 +1,9 @@
 .header {
     padding: 14px 0;
     background: #000000;
+    @include media-small-desktop {
+        background: #111115;
+    }
 }
 
 .header__wrapper {

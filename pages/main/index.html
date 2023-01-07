@@ -44,7 +44,10 @@
             <div class="wrapper backstage_wrapper">
                 <div class="layout-2-column">
                     <div class="backstage-image">
-                        <img src="/assets/image/backstage-image.jpg" alt="man in bamboo cap">
+                        <picture>
+                            <source media="(max-width: 1440px)" srcset="/assets/image/backstage-images/backstage-small-desktop.jpg">
+                            <img src="/assets/image/backstage-images/backstage-desktop.jpg" alt="man in a bamboo hat">
+                        </picture>
                     </div>
                     <div class="backstage-content">
                         <h2 class="backstage-content__title">The Backstage of the Wilderness World.</h2>
@@ -56,10 +59,17 @@
             </div>
         </section>
         <section class="pets">
-            <button class="button-control button-control_prew">
-                <object data="/assets/icons/arrow_prew.svg" type="image/svg+xml"></object>
-            </button>
             <div class="wrapper wrapper__pets">
+                <div class="button-control-position">
+                    <div class="button-control-line">
+                        <button class="button-control button-control_prew">
+                            <object data="/assets/icons/arrow_prew.svg" type="image/svg+xml"></object>
+                        </button>
+                        <button class="button-control button-control_next">
+                            <object data="/assets/icons/arrow_next.svg" type="image/svg+xml"></object>
+                        </button>
+                    </div>
+                </div>
                 <div class="layout-3-column">
                     <div class="pet">
                         <div class="pet__border">
@@ -118,9 +128,6 @@
                 </div>
                 <button class="button button_favorite">choose your favorite</button>
             </div>
-            <button class="button-control button-control_next">
-                <object data="/assets/icons/arrow_next.svg" type="image/svg+xml"></object>
-            </button>
         </section>
         <section class="pick-and-feed">
             <div class="wrapper wrapper_pick-and-feed">
