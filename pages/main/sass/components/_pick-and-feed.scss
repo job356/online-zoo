@@ -2,16 +2,26 @@
     background: $orange_gradient;
     opacity: 0.9;
     padding: 69px 0 100px;
+    @include media-small-desktop {
+        padding: 30px 30px 50px;
+    }
 }
 
 .wrapper_pick-and-feed {
     background: $frosted_glass_white;
     border-radius: 20px;
     padding-bottom: 59px;
+    @include media-small-desktop {
+        width: 940px;
+        padding: 0 0 50px;
+    }
 }
 
 .pick-and-feed-content {
     padding: 41px 0 0 99px;
+    @include media-small-desktop {
+        padding: 30px 48px 0 49px;
+    }
 }
 
 .pick-and-feed__title {
@@ -24,7 +34,7 @@
 .pick-and-feed__text {
     color: $black_blue;
     &_regular {
-        @include font ($size: 2.4rem, $weight: 400, $height: 2.9rem);
+        @include font ($size: 2.4rem, $weight: 500, $height: 2.9rem);
         margin: 30px 0 40px;
     }
     &_medium {
@@ -32,7 +42,7 @@
         margin: 0 0 10px;
     }
     &_simple {
-        @include font ($size: 1.6rem, $weight: 400, $height: 2.1rem);
+        @include font ($size: 1.6rem, $weight: 500, $height: 2.1rem);
         margin: 0px;
         >* {
             color: $black_blue;

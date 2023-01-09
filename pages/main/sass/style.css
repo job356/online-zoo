@@ -471,6 +471,7 @@ h1 {
 
 .step__caption {
   width: 168px;
+  margin: 30px 0 0;
 }
 
 .icon-next {
@@ -602,6 +603,11 @@ h1 {
   gap: 30px;
   justify-content: center;
   padding-bottom: 60px;
+}
+@media (max-width: 1440px) {
+  .layout-5-column {
+    padding-bottom: 70px;
+  }
 }
 
 .layout-4-column {
@@ -752,7 +758,6 @@ h1 {
   background-image: url(/assets/image/backgrounds/Giant\ Panda-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 0 -80px;
 }
 
 .watch-online_wrapper {
@@ -959,15 +964,31 @@ h1 {
   opacity: 0.9;
   padding: 69px 0 100px;
 }
+@media (max-width: 1440px) {
+  .pick-and-feed {
+    padding: 30px 30px 50px;
+  }
+}
 
 .wrapper_pick-and-feed {
   background: rgba(253, 253, 255, 0.52);
   border-radius: 20px;
   padding-bottom: 59px;
 }
+@media (max-width: 1440px) {
+  .wrapper_pick-and-feed {
+    width: 940px;
+    padding: 0 0 50px;
+  }
+}
 
 .pick-and-feed-content {
   padding: 41px 0 0 99px;
+}
+@media (max-width: 1440px) {
+  .pick-and-feed-content {
+    padding: 30px 48px 0 49px;
+  }
 }
 
 .pick-and-feed__title {
@@ -988,7 +1009,7 @@ h1 {
   font-family: "Roboto";
   font-style: normal;
   font-size: 2.4rem;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 2.9rem;
   margin: 30px 0 40px;
 }
@@ -1004,7 +1025,7 @@ h1 {
   font-family: "Roboto";
   font-style: normal;
   font-size: 1.6rem;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 2.1rem;
   margin: 0px;
 }
