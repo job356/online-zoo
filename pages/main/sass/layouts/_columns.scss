@@ -30,6 +30,13 @@
     >* {
         flex-basis: 23.1%;
     }
+    @include media-small-desktop {
+        width: max-content;
+        justify-content: flex-start;
+        >* {
+            flex-basis: 293px;
+        }
+    }
 }
 
 .footer-column {

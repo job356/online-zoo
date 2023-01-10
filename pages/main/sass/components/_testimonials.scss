@@ -3,6 +3,17 @@
     background-image: url(/assets/image/backgrounds/leav_foto.jpg);
     background-repeat: no-repeat;
     background-position: right 495px;
+    @include media-small-desktop {
+        padding-bottom: 140px;
+        background-image: url(/assets/image/backgrounds/leav_foto-small-desktop.jpg);
+        background-position: right 520px;
+    }
+}
+
+.wrapper__testimonials {
+    @include media-small-desktop {
+        max-width: 940px;
+    }
 }
 
 .testimonials__title {
@@ -10,6 +21,15 @@
     margin: 140px 0 47px;
     color: $black_blue;
     text-align: center;
+    @include media-small-desktop {
+        margin: 100px 0 30px;
+    }
+}
+
+.testimonial-slider {
+    @include media-small-desktop {
+        overflow: hidden;
+    }
 }
 
 .testimonial__border {

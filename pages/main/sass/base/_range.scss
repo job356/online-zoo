@@ -2,6 +2,9 @@
     display: flex;
     justify-content: center;
     padding-bottom: 31px;
+    @include media-small-desktop {
+      padding-bottom: 52px;
+    }
 }
 
 .range__border {
@@ -11,6 +14,9 @@
     background: $pink_gradient;
     padding: 1px;
     border-radius: 5px;
+    @include media-small-desktop {
+      width: 390px;
+    }
 }
 
 .thumb {
@@ -23,6 +29,9 @@
     border-radius: 5px;  
     background: #F5F7F6;
     outline: none;
+    @include media-small-desktop {
+      width: 390px;
+    }
   }
   
   .thumb::-webkit-slider-thumb {
@@ -33,4 +42,7 @@
     border-radius: 5px; 
     background: #FE9013;
     cursor: pointer;
+    @include media-small-desktop {
+      width: 75px;
+    }
   }
