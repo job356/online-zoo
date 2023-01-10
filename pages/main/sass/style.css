@@ -653,6 +653,11 @@ h1 {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 1440px) {
+  .footer-column {
+    position: relative;
+  }
+}
 
 .footer {
   background: #111115;
@@ -660,6 +665,11 @@ h1 {
 
 .wrapper_footer {
   padding: 40px 0 50px;
+}
+@media (max-width: 1440px) {
+  .wrapper_footer {
+    padding: 40px 30px 50px;
+  }
 }
 
 .social-media {
@@ -700,6 +710,7 @@ h1 {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.2rem;
+  width: 206px;
   padding: 10px;
   border: none;
   border-radius: 2px;
@@ -764,6 +775,14 @@ h1 {
 
 .footer-navigation {
   align-self: flex-end;
+  padding: 0 32px 0 101px;
+}
+@media (max-width: 1440px) {
+  .footer-navigation {
+    position: absolute;
+    left: 321px;
+    padding: 0px;
+  }
 }
 
 .header-copiright {

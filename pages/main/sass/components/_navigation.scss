@@ -33,4 +33,10 @@
 
 .footer-navigation {
     align-self: flex-end;
+    padding: 0 32px 0 101px;
+    @include media-small-desktop {
+        position: absolute;
+        left: 321px;
+        padding: 0px;
+    }
 }
