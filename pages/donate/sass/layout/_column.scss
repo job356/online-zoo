@@ -7,4 +7,7 @@
 
 .footer-column {
     @include column;
+    @include media-small-desktop {
+        position: relative;
+    }
 }

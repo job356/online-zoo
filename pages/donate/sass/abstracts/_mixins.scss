@@ -16,3 +16,7 @@
     border-radius: $radius;
     padding: 1px;
 }
+
+@mixin media-small-desktop {
+    @media (max-width: 1440px) { @content; }
+}

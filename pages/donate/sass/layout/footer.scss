@@ -4,6 +4,9 @@
 
 .wrapper_footer {
     padding: 40px 0 50px;
+    @include media-small-desktop {
+        padding: 40px 30px 50px;
+    }
 }
 
 .social-media {
@@ -36,6 +39,7 @@
 
 .subscribe__input {
     @include font ($size:1.6rem, $weight: 400, $height: 2.2rem);
+    width: 206px;
     padding: 10px;
     border: none;
     border-radius: 2px;

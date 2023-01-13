@@ -465,6 +465,12 @@ h1 {
   max-width: 1160px;
   margin: auto;
 }
+@media (max-width: 1440px) {
+  .wrapper {
+    max-width: 1000px;
+    padding: 0 30px;
+  }
+}
 
 .layout-2-column {
   display: flex;
@@ -478,6 +484,11 @@ h1 {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 1440px) {
+  .footer-column {
+    position: relative;
+  }
+}
 
 .header {
   padding: 14px 0;
@@ -486,6 +497,16 @@ h1 {
   background-image: url(/assets/image/backgrounds/panda_bg.jpg);
   background-repeat: no-repeat;
   background-position: 0 83.47px;
+  background-size: cover;
+}
+@media (max-width: 1440px) {
+  .header {
+    background: #111115;
+    background-image: url(/assets/image/backgrounds/panda_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: -160px 83.47px;
+    background-size: auto;
+  }
 }
 
 .header__wrapper {
@@ -506,6 +527,11 @@ h1 {
 
 .wrapper_footer {
   padding: 40px 0 50px;
+}
+@media (max-width: 1440px) {
+  .wrapper_footer {
+    padding: 40px 30px 50px;
+  }
 }
 
 .social-media {
@@ -546,6 +572,7 @@ h1 {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.2rem;
+  width: 206px;
   padding: 10px;
   border: none;
   border-radius: 2px;
@@ -600,6 +627,11 @@ h1 {
   list-style: none;
   padding: 0px;
 }
+@media (max-width: 1440px) {
+  .navigation {
+    gap: 48px;
+  }
+}
 
 .navigation__item {
   color: #FFFFFF;
@@ -623,6 +655,14 @@ h1 {
 
 .footer-navigation {
   align-self: flex-end;
+  padding: 0 32px 0 101px;
+}
+@media (max-width: 1440px) {
+  .footer-navigation {
+    position: absolute;
+    left: 321px;
+    padding: 0px;
+  }
 }
 
 .donate {

@@ -5,6 +5,14 @@
     background-image: url(/assets/image/backgrounds/panda_bg.jpg);
     background-repeat: no-repeat;
     background-position: 0 83.47px;
+    background-size: cover;
+    @include media-small-desktop {
+        background: #111115;
+        background-image: url(/assets/image/backgrounds/panda_bg.jpg);
+        background-repeat: no-repeat;
+        background-position: -160px 83.47px;
+        background-size: auto;
+    }
 }
 
 .header__wrapper {
