@@ -1,6 +1,9 @@
 .donate {
     padding: 40px 0 180px;
     background: $orange-gradient;
+    @include media-small-desktop {
+        padding: 40px 0 30px;
+    }
 }
 
 .donate__info-title {
@@ -8,29 +11,43 @@
     margin: 0 0 10px;
     text-align: center;
     color: $color-light;
+    @include media-small-desktop {
+        text-align: left;
+        padding-right: 162px;
+        margin: 0 0 30px;
+    }
 }
 
 .donate__info-text {
     @include font ($size: 1.6 rem, $weight: 500, $height: 2.2rem);
     margin: 0 0 40px;
     color: $color-light;
+    @include media-small-desktop {
+        padding-right: 61px;
+    }
 }
 
 .donate__info-subtitle {
     @include font ($size: 3.6rem, $weight: 400, $height: 4.7rem);
     margin: 0 0 60px;
     color: #FE9013;
+    @include media-small-desktop {
+        margin: 0 0 40px;
+    }
 }
 
 .donate-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 40px 0 62px;
+    padding: 40px 65px 62px;
     background: rgba(255, 255, 255, 0.52);
     border-radius: 20px;
     >* {
         align-self: center;
+    }
+    @include media-small-desktop {
+        padding: 20px 0 30px;
     }
 }
 
@@ -44,6 +61,9 @@
     @include font ($size: 2.4rem, $weight: 400, $height: 2.9rem);
     margin: 20px 0 60px;
     color: $black_blue;
+    @include media-small-desktop {
+        margin: 10px 0 60px;
+    }
 }
 
 .amount {

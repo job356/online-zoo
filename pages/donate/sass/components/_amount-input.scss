@@ -1,3 +1,8 @@
+.amount-input {
+    width: 100%;
+    padding-bottom: 33px;
+}
+
 .amount-input__title {
     @include font ($size: 1.6rem, $weight: 400, $height: 2.2rem);
     color: #000000;
@@ -7,17 +12,15 @@
 .amount-input__background {
     display: flex;
     align-items: center;
-    padding: 9px 30px;
+    padding: 12px 30px;
     background: #404950;
     border-radius: 2px;
-    margin-bottom: 12px;
 }
 
 .amount-input__line {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 120px;
+    position: relative;
+    left: 8px;
+    width: 100%;
     height: 2px;
     background: #72828E;
 }
@@ -48,26 +51,33 @@
     }
 }
 
-.amount-price {
-    display: flex;
-    justify-content: space-between;
-    gap: 58px;
-    padding-bottom: 50px;
-    >* {
-        flex-basis: 72px;
-        padding-left: 12px;
-        background-image: url(/assets/icons/donate-icons/dollar.svg);
-        background-repeat: no-repeat;
-        background-position: 0 50%;
-    }
-}
-
 .price {
     @include font ($size: 2.6rem, $weight: 500, $height: 3.6rem);
     text-transform: uppercase;
     color: #333B41;
     margin: 0px;
-    &:checked {
-        color: #FE9013;
-    }
+    background-image: url(/assets/icons/donate-icons/dollar.svg);
+    background-repeat: no-repeat;
+    padding-left: 12px;
+    background-position: 0 50%;
+}
+
+[type="radio"]:checked + .price {
+    @extend %transition;
+    color: #FE9013;
+    background-image: url(/assets/icons/donate-icons/dollar-checked.svg);
+}
+
+.radio-wrapper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -18px;
+}
+
+.radio-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 21px;
 }
