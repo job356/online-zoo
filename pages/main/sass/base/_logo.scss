@@ -2,6 +2,9 @@
     width: 82px;
     position: relative;
     text-decoration: none;
+    @include media-tablet {
+        width: 50px;
+    }
 }
 
 h1 {
@@ -11,12 +14,30 @@ h1 {
     text-align: center;
     color: $color-light;
     border: 1.18841px solid #FFFFFF;
+    @include media-tablet {
+        @include font ($size: 1.22899rem, $weight: 400, $height: 1.5rem);
+        padding: 0px;
+        border: none;
+    }
 }
 
 .logo__svg {
     position: absolute;
     left: 11.13px;
     top: 24.62px;
+    @include media-tablet {
+        display: none;
+    }
+}
+
+.logo__svg_tablet {
+    display: none;
+    @include media-tablet {
+        display: inline-block;
+        position: absolute;
+        left: 5.54px;
+        top: 13.99px;
+    }
 }
 
 .footer-logo {

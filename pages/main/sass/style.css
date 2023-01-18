@@ -328,6 +328,11 @@ body {
   position: relative;
   text-decoration: none;
 }
+@media (max-width: 999px) {
+  .logo {
+    width: 50px;
+  }
+}
 
 h1 {
   font-family: "Roboto";
@@ -341,11 +346,39 @@ h1 {
   color: #FFFFFF;
   border: 1.18841px solid #FFFFFF;
 }
+@media (max-width: 999px) {
+  h1 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 1.22899rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    padding: 0px;
+    border: none;
+  }
+}
 
 .logo__svg {
   position: absolute;
   left: 11.13px;
   top: 24.62px;
+}
+@media (max-width: 999px) {
+  .logo__svg {
+    display: none;
+  }
+}
+
+.logo__svg_tablet {
+  display: none;
+}
+@media (max-width: 999px) {
+  .logo__svg_tablet {
+    display: inline-block;
+    position: absolute;
+    left: 5.54px;
+    top: 13.99px;
+  }
 }
 
 .footer-logo {
@@ -565,6 +598,35 @@ h1 {
   }
 }
 
+.burger-menu__line:after, .burger-menu__line:before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 2px;
+  background: #FFFFFF;
+  border-radius: 2px;
+}
+
+.burger-menu__line {
+  display: none;
+}
+@media (max-width: 999px) {
+  .burger-menu__line {
+    position: relative;
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: #FFFFFF;
+    border-radius: 2px;
+  }
+}
+.burger-menu__line:before {
+  top: 4px;
+}
+.burger-menu__line:after {
+  bottom: 4px;
+}
+
 .wrapper {
   max-width: 1160px;
   margin: auto;
@@ -575,14 +637,20 @@ h1 {
     padding: 0 30px;
   }
 }
+@media (max-width: 999px) {
+  .wrapper {
+    max-width: 640px;
+    padding: 0 20px;
+  }
+}
 
 .header {
   padding: 14px 0;
-  background: #000000;
+  background: #111115;
 }
-@media (max-width: 1440px) {
+@media (max-width: 999px) {
   .header {
-    background: #111115;
+    padding: 1px 0;
   }
 }
 
@@ -735,6 +803,10 @@ h1 {
   align-self: flex-end;
 }
 
+.header-navigation {
+  display: none;
+}
+
 .navigation {
   font-family: "Roboto";
   font-style: normal;
@@ -800,6 +872,11 @@ h1 {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-emphasis-color: transparent;
+}
+@media (max-width: 999px) {
+  .header-copiright {
+    display: none;
+  }
 }
 
 .watch-online {

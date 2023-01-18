@@ -1,8 +1,8 @@
 .header {
     padding: 14px 0;
-    background: #000000;
-    @include media-small-desktop {
-        background: #111115;
+    background: #111115;
+    @include media-tablet {
+        padding: 1px 0;
     }
 }
 
