@@ -15,6 +15,11 @@
         @include media-small-desktop {
             margin: 0 auto;
         }
+        @include media-tablet {
+            position: absolute;
+            top: 245px;
+            left: 20px;
+        }
     }
     &_feedback {
         border-radius: 5px;

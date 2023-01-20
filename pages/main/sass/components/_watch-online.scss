@@ -11,6 +11,10 @@
     @include media-small-desktop {
         padding: 0 30px 47px;
     }
+    @include media-tablet {
+        position: relative;
+        padding: 0 20px 40px;
+    }
 }
 
 
@@ -28,6 +32,12 @@
         height: 367px;
         margin-right: 147px;
         margin-bottom: 47px;
+    }
+    @include media-tablet {
+        width: 237.6px;
+        height: 237.6px;
+        top: 10.23px;
+        left: 100px;
     }
 }
 
@@ -47,5 +57,10 @@
         @include font ($size: 8.5rem, $weight: 700, $height: 6.4rem);
         top: 54px;
         left: 58px;
+    }
+    @include media-tablet {
+        @include font ($size: 5.42894rem, $weight: 700, $height: 4.1rem);
+        left: 37.3px;
+        top: 37.81px;
     }
 }

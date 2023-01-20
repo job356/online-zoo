@@ -411,6 +411,13 @@ h1 {
     margin: 0 auto;
   }
 }
+@media (max-width: 999px) {
+  .button_watch-online {
+    position: absolute;
+    top: 245px;
+    left: 20px;
+  }
+}
 .button_feedback {
   border-radius: 5px;
   margin: 0px;
@@ -633,13 +640,13 @@ h1 {
 }
 @media (max-width: 1440px) {
   .wrapper {
-    max-width: 1000px;
+    max-width: 940px;
     padding: 0 30px;
   }
 }
 @media (max-width: 999px) {
   .wrapper {
-    max-width: 640px;
+    max-width: 600px;
     padding: 0 20px;
   }
 }
@@ -803,8 +810,10 @@ h1 {
   align-self: flex-end;
 }
 
-.header-navigation {
-  display: none;
+@media (max-width: 999px) {
+  .header-navigation {
+    display: none;
+  }
 }
 
 .navigation {
@@ -895,6 +904,12 @@ h1 {
     padding: 0 30px 47px;
   }
 }
+@media (max-width: 999px) {
+  .watch-online_wrapper {
+    position: relative;
+    padding: 0 20px 40px;
+  }
+}
 
 .watch-content__bg-circle {
   position: relative;
@@ -911,6 +926,14 @@ h1 {
     height: 367px;
     margin-right: 147px;
     margin-bottom: 47px;
+  }
+}
+@media (max-width: 999px) {
+  .watch-content__bg-circle {
+    width: 237.6px;
+    height: 237.6px;
+    top: 10.23px;
+    left: 100px;
   }
 }
 
@@ -940,6 +963,17 @@ h1 {
     line-height: 6.4rem;
     top: 54px;
     left: 58px;
+  }
+}
+@media (max-width: 999px) {
+  .watch-content__title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 5.42894rem;
+    font-weight: 700;
+    line-height: 4.1rem;
+    left: 37.3px;
+    top: 37.81px;
   }
 }
 

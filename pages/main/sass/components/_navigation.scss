@@ -1,5 +1,7 @@
 .header-navigation {
-    display: none;
+    @include media-tablet {
+        display: none;
+    }
 }
 
 .navigation {
