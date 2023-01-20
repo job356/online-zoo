@@ -451,6 +451,12 @@ h1 {
     left: 353px;
   }
 }
+@media (max-width: 999px) {
+  .button-control-position {
+    top: 349px;
+    left: 245px;
+  }
+}
 
 .button-control-line {
   display: flex;
@@ -459,6 +465,11 @@ h1 {
 @media (max-width: 1440px) {
   .button-control-line {
     gap: 171px;
+  }
+}
+@media (max-width: 999px) {
+  .button-control-line {
+    gap: 30px;
   }
 }
 
@@ -688,7 +699,14 @@ h1 {
 @media (max-width: 1440px) {
   .layout-3-column {
     gap: 92px 20px;
-    justify-content: center;
+  }
+}
+@media (max-width: 999px) {
+  .layout-3-column {
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    gap: 92px 30px;
+    padding-bottom: 60px;
   }
 }
 
@@ -1073,6 +1091,11 @@ h1 {
     background-image: url(/assets/image/backgrounds/palm_foto-small-desktop.jpg), url(/assets/image/backgrounds/strelitzia\ 1\ small-desktop.jpg);
   }
 }
+@media (max-width: 999px) {
+  .pets {
+    background-image: url(/assets/image/backgrounds/palm_foto-tablet.jpg), url(/assets/image/backgrounds/strelitzia\ 1-tablet.jpg);
+  }
+}
 
 .wrapper__pets {
   position: relative;
@@ -1081,6 +1104,12 @@ h1 {
 @media (max-width: 1440px) {
   .wrapper__pets {
     padding: 0 0 140px;
+  }
+}
+@media (max-width: 999px) {
+  .wrapper__pets {
+    overflow: hidden;
+    padding: 0 20px 100px;
   }
 }
 
@@ -1100,6 +1129,12 @@ h1 {
     height: 294px;
   }
 }
+@media (max-width: 999px) {
+  .pet__img {
+    width: 285px;
+    height: 285px;
+  }
+}
 
 .pet__description {
   padding: 8px 16px 14px;
@@ -1116,6 +1151,11 @@ h1 {
     background-position: 247px 8px;
   }
 }
+@media (max-width: 999px) {
+  .pet__description_herbivorous {
+    background-position: 240px 8px;
+  }
+}
 .pet__description_carnivorous {
   background-image: url(/assets/icons/meet-fish_icon.svg);
   background-repeat: no-repeat;
@@ -1124,6 +1164,16 @@ h1 {
 @media (max-width: 1440px) {
   .pet__description_carnivorous {
     background-position: 237px 8px;
+  }
+}
+@media (max-width: 999px) {
+  .pet__description_carnivorous {
+    background-position: 230px 5px;
+  }
+}
+@media (max-width: 999px) {
+  .pet__description {
+    padding: 6.24px 0 10.94px 12.47px;
   }
 }
 
@@ -1135,6 +1185,15 @@ h1 {
   line-height: 2.2rem;
   margin: 0px;
 }
+@media (max-width: 999px) {
+  .pet__name {
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 1.24695rem;
+    font-weight: 500;
+    line-height: 1.7rem;
+  }
+}
 
 .pet__native {
   font-family: "Roboto";
@@ -1143,6 +1202,15 @@ h1 {
   font-weight: 300;
   line-height: 1.8rem;
   margin: 0px;
+}
+@media (max-width: 999px) {
+  .pet__native {
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 1.16901rem;
+    font-weight: 300;
+    line-height: 1.4rem;
+  }
 }
 
 .pick-and-feed {

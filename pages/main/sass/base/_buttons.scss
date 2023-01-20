@@ -52,6 +52,10 @@
         top: 369px;
         left: 353px;
     }
+    @include media-tablet {
+        top: 349px;
+        left: 245px;
+    }
 }
 
 .button-control-line {
@@ -59,6 +63,9 @@
     gap: 1198px;
     @include media-small-desktop {
         gap: 171px;
+    }
+    @include media-tablet {
+        gap: 30px;
     }
 }
 

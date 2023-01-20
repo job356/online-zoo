@@ -9,7 +9,12 @@
     padding-bottom: 80px;
     @include media-small-desktop {
         gap: 92px 20px;
-        justify-content: center;
+    }
+    @include media-tablet {
+        display: grid;
+        grid-template-columns: max-content max-content max-content;
+        gap: 92px 30px;
+        padding-bottom: 60px;
     }
 }
 
