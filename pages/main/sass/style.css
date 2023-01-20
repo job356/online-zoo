@@ -521,12 +521,22 @@ h1 {
 }
 
 .step__caption {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.2rem;
   width: 168px;
   margin: 30px 0 0;
 }
 
 .icon-next {
   padding-top: 62px;
+}
+@media (max-width: 999px) {
+  .icon-next {
+    display: none;
+  }
 }
 
 .social-media__link {
@@ -557,6 +567,13 @@ h1 {
 }
 .social-media__link.you-tube-icon:hover {
   background-image: url(/assets/icons/social-media/youtube_icon_hover.svg);
+}
+
+.icon-next-position {
+  display: flex;
+  position: absolute;
+  gap: 114.2px;
+  top: -17px;
 }
 
 .range {
@@ -720,6 +737,12 @@ h1 {
 @media (max-width: 1440px) {
   .layout-5-column {
     padding-bottom: 70px;
+  }
+}
+@media (max-width: 999px) {
+  .layout-5-column {
+    position: relative;
+    padding-bottom: 40px;
   }
 }
 
@@ -1223,6 +1246,11 @@ h1 {
     padding: 30px 30px 50px;
   }
 }
+@media (max-width: 999px) {
+  .pick-and-feed {
+    padding: 20px;
+  }
+}
 
 .wrapper_pick-and-feed {
   background: rgba(253, 253, 255, 0.52);
@@ -1235,6 +1263,11 @@ h1 {
     padding: 0 0 50px;
   }
 }
+@media (max-width: 999px) {
+  .wrapper_pick-and-feed {
+    padding: 0 0 60px;
+  }
+}
 
 .pick-and-feed-content {
   padding: 41px 0 0 99px;
@@ -1242,6 +1275,11 @@ h1 {
 @media (max-width: 1440px) {
   .pick-and-feed-content {
     padding: 30px 48px 0 49px;
+  }
+}
+@media (max-width: 999px) {
+  .pick-and-feed-content {
+    padding: 10px 20px 0;
   }
 }
 
@@ -1255,6 +1293,15 @@ h1 {
   margin: 0px;
   color: #FE9013;
 }
+@media (max-width: 999px) {
+  .pick-and-feed__title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 4.2rem;
+    font-weight: 400;
+    line-height: 5rem;
+  }
+}
 
 .pick-and-feed__text {
   color: #333B41;
@@ -1266,6 +1313,16 @@ h1 {
   font-weight: 500;
   line-height: 2.9rem;
   margin: 30px 0 40px;
+}
+@media (max-width: 999px) {
+  .pick-and-feed__text_regular {
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    margin: 20px 0 20px;
+  }
 }
 .pick-and-feed__text_medium {
   font-family: "Roboto";
@@ -1297,6 +1354,11 @@ h1 {
   color: #333B41;
   text-align: center;
   margin: 60px 0 40px;
+}
+@media (max-width: 999px) {
+  .pick-an-feed__subtitle {
+    margin: 30px 0 20px;
+  }
 }
 
 .testimonials {

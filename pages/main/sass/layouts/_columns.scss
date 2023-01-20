@@ -26,6 +26,10 @@
     @include media-small-desktop {
         padding-bottom: 70px
     }
+    @include media-tablet {
+        position: relative;
+        padding-bottom: 40px
+    }
 }
 
 .layout-4-column {

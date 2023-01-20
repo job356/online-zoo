@@ -15,12 +15,16 @@
 }
 
 .step__caption {
+    @include font ($size:1.6rem, $weight:400, $height: 2.2rem);
     width: 168px;
     margin: 30px 0 0;
 }
 
 .icon-next {
     padding-top: 62px;
+    @include media-tablet {
+        display: none;
+    }
 }
 
 .social-media__link {
@@ -51,4 +55,11 @@
             background-image: url(/assets/icons/social-media/youtube_icon_hover.svg);
         }
     }
+}
+
+.icon-next-position {
+    display: flex;
+    position: absolute;
+    gap: 114.2px;
+    top: -17px;
 }
