@@ -5,6 +5,9 @@
     @include media-small-desktop {
       padding-bottom: 52px;
     }
+    @include media-tablet {
+      display: none;
+    }
 }
 
 .range__border {

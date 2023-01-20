@@ -24,6 +24,10 @@
     &_feedback {
         border-radius: 5px;
         margin: 0px;
+        @include media-tablet {
+            width: 240px;
+            margin: 0 auto;
+        }
     }
     &_donate {
         border-radius: 5px;

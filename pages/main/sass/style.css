@@ -422,6 +422,12 @@ h1 {
   border-radius: 5px;
   margin: 0px;
 }
+@media (max-width: 999px) {
+  .button_feedback {
+    width: 240px;
+    margin: 0 auto;
+  }
+}
 .button_donate {
   border-radius: 5px;
 }
@@ -570,10 +576,15 @@ h1 {
 }
 
 .icon-next-position {
-  display: flex;
-  position: absolute;
-  gap: 114.2px;
-  top: -17px;
+  display: none;
+}
+@media (max-width: 999px) {
+  .icon-next-position {
+    display: flex;
+    position: absolute;
+    gap: 114.2px;
+    top: -17px;
+  }
 }
 
 .range {
@@ -584,6 +595,11 @@ h1 {
 @media (max-width: 1440px) {
   .range {
     padding-bottom: 52px;
+  }
+}
+@media (max-width: 999px) {
+  .range {
+    display: none;
   }
 }
 
@@ -762,6 +778,17 @@ h1 {
   }
   .layout-4-column > * {
     flex-basis: 293px;
+  }
+}
+@media (max-width: 999px) {
+  .layout-4-column {
+    flex-direction: column;
+    width: auto;
+    gap: 15px;
+    padding-bottom: 40px;
+  }
+  .layout-4-column > * {
+    flex-basis: auto;
   }
 }
 
@@ -1374,6 +1401,13 @@ h1 {
     background-position: right 520px;
   }
 }
+@media (max-width: 999px) {
+  .testimonials {
+    padding-bottom: 80px;
+    background-image: url(/assets/image/backgrounds/leav_foto-tablet.jpg);
+    background-position: right 630px;
+  }
+}
 
 @media (max-width: 1440px) {
   .wrapper__testimonials {
@@ -1394,6 +1428,11 @@ h1 {
 @media (max-width: 1440px) {
   .testimonials__title {
     margin: 100px 0 30px;
+  }
+}
+@media (max-width: 999px) {
+  .testimonials__title {
+    margin: 60px 0 30px;
   }
 }
 
@@ -1419,6 +1458,11 @@ h1 {
   background: #F1F3F2;
   border-radius: 20px;
   padding: 0 15px 19px;
+}
+@media (max-width: 999px) {
+  .testimonial__content {
+    padding: 0 29px 8px 12px;
+  }
 }
 
 .user__icon {
@@ -1458,6 +1502,12 @@ h1 {
 .testimonial__text::-webkit-scrollbar {
   width: 0px;
   height: 0px;
+}
+@media (max-width: 999px) {
+  .testimonial__text {
+    height: 38px;
+    padding-left: 6px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

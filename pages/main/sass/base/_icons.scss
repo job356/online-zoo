@@ -58,8 +58,11 @@
 }
 
 .icon-next-position {
-    display: flex;
-    position: absolute;
-    gap: 114.2px;
-    top: -17px;
+    display: none;
+    @include media-tablet {
+        display: flex;
+        position: absolute;
+        gap: 114.2px;
+        top: -17px;
+    }
 }
