@@ -5,6 +5,9 @@
     @include media-small-desktop {
         background-image: none;
     }
+    @include media-tablet {
+        background-image: url(/assets/image/backgrounds/flower_foto_tablet.jpg);
+    }
 }
 
 .backstage_wrapper {
@@ -12,12 +15,25 @@
     @include media-small-desktop {
         padding: 100px 30px 142px;
     }
+    @include media-tablet {
+        padding: 60px 20px 80px;
+    }
 }
 
 .backstage-content {
     padding-left: 87px;
     @include media-small-desktop {
         padding-left: 31px;
+    }
+    @include media-tablet {
+        padding: 0px;
+        margin-right: 105px;
+    }
+}
+
+.backstage-image {
+    @include media-tablet {
+        display: none;
     }
 }
 
@@ -31,6 +47,9 @@
     @include font ($size: 2.4rem, $weight: 400, $height: 2.9rem);
     color: $black_blue;
     margin: 54px 0 34px 0;
+    @include media-tablet {
+        margin: 30px 0 20px;
+    }
 }
 
 .backstage-content__text {
