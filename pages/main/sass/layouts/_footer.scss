@@ -7,6 +7,9 @@
     @include media-small-desktop {
         padding: 40px 30px 50px;
     }
+    @include media-tablet {
+        padding: 12px 20px;
+    }
 }
 
 .social-media {
@@ -14,6 +17,10 @@
     flex-direction: column;
     gap: 10px;
     padding-top: 44px;
+    @include media-tablet {
+        gap: 20px;
+        padding-top: 0px;
+    }
 }
 
 .footer-subscribe {
@@ -60,3 +67,9 @@
     align-self: flex-end;
 }
 
+.footer-social_tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}

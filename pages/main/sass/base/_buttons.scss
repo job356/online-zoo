@@ -31,6 +31,9 @@
     }
     &_donate {
         border-radius: 5px;
+        @include media-tablet {
+            margin: 0px;
+        }
     }
     &_subscribe {
         width: 129px;

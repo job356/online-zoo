@@ -31,10 +31,20 @@
     width: 111px;
     height: 26px;
     background-repeat: no-repeat;
+    @include media-tablet {
+        width: 26px;
+        height: 26px;
+    }
     &.facebook-icon {
         background-image: url(/assets/icons/social-media/facebook_icon.svg);
         &:hover {
             background-image: url(/assets/icons/social-media/facebook_icon_hover.svg);
+        }
+    }
+    &.facebook-icon_tablet {
+        background-image: url(/assets/icons/social-media/facebook-icon-tablet.svg);
+        &:active {
+            background-image: url(/assets/icons/social-media/facebook-icon-tablet_hover.svg);
         }
     }
     &.twitter-icon {
@@ -43,16 +53,34 @@
             background-image: url(/assets/icons/social-media/twitter_icon_hover.svg);
         }
     }
+    &.twitter-icon_tablet {
+        background-image: url(/assets/icons/social-media/twitter-icon-tablet.svg);
+        &:active {
+            background-image: url(/assets/icons/social-media/twitter-icon-tablet_hover.svg);
+        }
+    }
     &.instagram-icon {
         background-image: url(/assets/icons/social-media/instagram_icon.svg);
         &:hover {
             background-image: url(/assets/icons/social-media/instagram_icon_hover.svg);
         }
     }
+    &.instagram-icon_tablet {
+        background-image: url(/assets/icons/social-media/instagram-icon-tablet.svg);
+        &:active {
+            background-image: url(/assets/icons/social-media/instagram-icon-tablet_hover.svg);
+        }
+    }
     &.you-tube-icon {
         background-image: url(/assets/icons/social-media/youtube_icon.svg);
         &:hover {
             background-image: url(/assets/icons/social-media/youtube_icon_hover.svg);
+        }
+    }
+    &.you-tube-icon_tablet {
+        background-image: url(/assets/icons/social-media/youtube-icon-tablet.svg);
+        &:active {
+            background-image: url(/assets/icons/social-media/youtube-icon-tablet_hover.svg);
         }
     }
 }

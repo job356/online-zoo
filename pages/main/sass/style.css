@@ -358,6 +358,19 @@ h1 {
   }
 }
 
+.logo__title_tablet {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 1.90145rem;
+  font-weight: 400;
+  line-height: 2.3rem;
+  margin: 0px;
+  padding: 3.55px 4.75px;
+  text-align: center;
+  color: #FFFFFF;
+  border: 1.18841px solid #FFFFFF;
+}
+
 .logo__svg {
   position: absolute;
   left: 11.13px;
@@ -384,6 +397,11 @@ h1 {
 .footer-logo {
   width: 82px;
   padding-bottom: 68px;
+}
+@media (max-width: 999px) {
+  .footer-logo {
+    padding-bottom: 32px;
+  }
 }
 
 .button {
@@ -430,6 +448,11 @@ h1 {
 }
 .button_donate {
   border-radius: 5px;
+}
+@media (max-width: 999px) {
+  .button_donate {
+    margin: 0px;
+  }
 }
 .button_subscribe {
   width: 129px;
@@ -550,11 +573,23 @@ h1 {
   height: 26px;
   background-repeat: no-repeat;
 }
+@media (max-width: 999px) {
+  .social-media__link {
+    width: 26px;
+    height: 26px;
+  }
+}
 .social-media__link.facebook-icon {
   background-image: url(/assets/icons/social-media/facebook_icon.svg);
 }
 .social-media__link.facebook-icon:hover {
   background-image: url(/assets/icons/social-media/facebook_icon_hover.svg);
+}
+.social-media__link.facebook-icon_tablet {
+  background-image: url(/assets/icons/social-media/facebook-icon-tablet.svg);
+}
+.social-media__link.facebook-icon_tablet:active {
+  background-image: url(/assets/icons/social-media/facebook-icon-tablet_hover.svg);
 }
 .social-media__link.twitter-icon {
   background-image: url(/assets/icons/social-media/twitter_icon.svg);
@@ -562,17 +597,35 @@ h1 {
 .social-media__link.twitter-icon:hover {
   background-image: url(/assets/icons/social-media/twitter_icon_hover.svg);
 }
+.social-media__link.twitter-icon_tablet {
+  background-image: url(/assets/icons/social-media/twitter-icon-tablet.svg);
+}
+.social-media__link.twitter-icon_tablet:active {
+  background-image: url(/assets/icons/social-media/twitter-icon-tablet_hover.svg);
+}
 .social-media__link.instagram-icon {
   background-image: url(/assets/icons/social-media/instagram_icon.svg);
 }
 .social-media__link.instagram-icon:hover {
   background-image: url(/assets/icons/social-media/instagram_icon_hover.svg);
 }
+.social-media__link.instagram-icon_tablet {
+  background-image: url(/assets/icons/social-media/instagram-icon-tablet.svg);
+}
+.social-media__link.instagram-icon_tablet:active {
+  background-image: url(/assets/icons/social-media/instagram-icon-tablet_hover.svg);
+}
 .social-media__link.you-tube-icon {
   background-image: url(/assets/icons/social-media/youtube_icon.svg);
 }
 .social-media__link.you-tube-icon:hover {
   background-image: url(/assets/icons/social-media/youtube_icon_hover.svg);
+}
+.social-media__link.you-tube-icon_tablet {
+  background-image: url(/assets/icons/social-media/youtube-icon-tablet.svg);
+}
+.social-media__link.you-tube-icon_tablet:active {
+  background-image: url(/assets/icons/social-media/youtube-icon-tablet_hover.svg);
 }
 
 .icon-next-position {
@@ -801,6 +854,21 @@ h1 {
     position: relative;
   }
 }
+@media (max-width: 999px) {
+  .footer-column {
+    display: none;
+  }
+}
+
+.footer-column_tablet {
+  display: none;
+}
+@media (max-width: 999px) {
+  .footer-column_tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
 .footer {
   background: #111115;
@@ -814,12 +882,23 @@ h1 {
     padding: 40px 30px 50px;
   }
 }
+@media (max-width: 999px) {
+  .wrapper_footer {
+    padding: 12px 20px;
+  }
+}
 
 .social-media {
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding-top: 44px;
+}
+@media (max-width: 999px) {
+  .social-media {
+    gap: 20px;
+    padding-top: 0px;
+  }
 }
 
 .footer-subscribe {
@@ -878,6 +957,13 @@ h1 {
   align-self: flex-end;
 }
 
+.footer-social_tablet {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
 @media (max-width: 999px) {
   .header-navigation {
     display: none;
@@ -899,6 +985,11 @@ h1 {
 @media (max-width: 1440px) {
   .navigation {
     gap: 48px;
+  }
+}
+@media (max-width: 999px) {
+  .navigation {
+    gap: 37px;
   }
 }
 
@@ -931,6 +1022,12 @@ h1 {
     position: absolute;
     left: 321px;
     padding: 0px;
+  }
+}
+@media (max-width: 999px) {
+  .footer-navigation {
+    position: static;
+    padding-top: 97px;
   }
 }
 

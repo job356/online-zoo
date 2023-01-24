@@ -14,6 +14,9 @@
     @include media-small-desktop {
         gap: 48px;
     }
+    @include media-tablet {
+        gap: 37px;
+    }
 }
 
 .navigation__item {
@@ -44,5 +47,9 @@
         position: absolute;
         left: 321px;
         padding: 0px;
+    }
+    @include media-tablet {
+        position: static;
+        padding-top: 97px;
     }
 }
