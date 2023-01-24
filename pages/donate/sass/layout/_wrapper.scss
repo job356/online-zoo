@@ -5,4 +5,8 @@
         max-width: $small-desktop-width;
         padding: 0 30px;
     }
+    @include media-tablet {
+        max-width: $tablet-width;
+        padding: 0 20px;
+    }
 }

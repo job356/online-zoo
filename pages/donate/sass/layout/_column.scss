@@ -10,4 +10,15 @@
     @include media-small-desktop {
         position: relative;
     }
+    @include media-tablet {
+        display: none;
+    }
+}
+
+.footer-column_tablet {
+    display: none;
+    @include media-tablet {
+        display: flex;
+        justify-content: space-between;
+    }
 }

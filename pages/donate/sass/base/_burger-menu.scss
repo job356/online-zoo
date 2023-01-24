@@ -1,0 +1,28 @@
+%burger-menu__line {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    background: #FFFFFF;
+    border-radius: 2px;
+}
+
+.burger-menu__line {
+   display: none;
+    @include media-tablet {
+    position: relative;
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: #FFFFFF;
+    border-radius: 2px;
+   }
+   &:before {
+    @extend %burger-menu__line;
+    top: 4px;
+   }
+   &:after {
+    @extend %burger-menu__line;
+    bottom: 4px;
+   }
+}

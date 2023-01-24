@@ -10,4 +10,7 @@
         text-emphasis-color: transparent;
         @extend %transition;
     }
+    @include media-tablet {
+        display: none;
+    }
 }

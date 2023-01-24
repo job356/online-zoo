@@ -11,15 +11,45 @@ h1 {
     text-align: center;
     color: $color-light;
     border: 1.18841px solid #FFFFFF;
+    @include media-tablet {
+        @include font ($size: 1.22899rem, $weight: 400, $height: 1.5rem);
+        padding: 0px;
+        border: none;
+    }
+}
+
+.logo__title_tablet {
+    @include font ($size: 1.90145rem, $weight:400, $height: 2.3rem);
+    margin: 0px;
+    padding: 3.55px 4.75px;
+    text-align: center;
+    color: $color-light;
+    border: 1.18841px solid #FFFFFF;
 }
 
 .logo__svg {
     position: absolute;
     left: 11.13px;
     top: 24.62px;
+    @include media-tablet {
+        display: none;
+    }
+}
+
+.logo__svg_tablet {
+    display: none;
+    @include media-tablet {
+        display: inline-block;
+        position: absolute;
+        left: 5.54px;
+        top: 13.99px;
+    }
 }
 
 .footer-logo {
     width: 82px;
     padding-bottom: 68px;
+    @include media-tablet {
+        padding-bottom: 32px;
+    }
 }

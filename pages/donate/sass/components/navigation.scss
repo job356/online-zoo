@@ -1,3 +1,9 @@
+.header-navigation {
+    @include media-tablet {
+        display: none;
+    }
+}
+
 .navigation {
     @include font ($size: 1.6rem, $weight: 400, $height: 2.2rem);
     display: flex;
@@ -7,6 +13,9 @@
     padding: 0px;
     @include media-small-desktop {
         gap: 48px;
+    }
+    @include media-tablet {
+        gap: 37px;
     }
 }
 
@@ -38,5 +47,9 @@
         position: absolute;
         left: 321px;
         padding: 0px;
+    }
+    @include media-tablet {
+        position: static;
+        padding-top: 97px;
     }
 }
