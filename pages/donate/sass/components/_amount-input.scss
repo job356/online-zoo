@@ -81,4 +81,9 @@
     flex-direction: column;
     align-items: center;
     gap: 21px;
+    @include media-tablet {
+        &:nth-child(-n+2) {
+            display: none;
+        }
+    }
 }

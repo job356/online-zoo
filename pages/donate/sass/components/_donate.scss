@@ -4,6 +4,9 @@
     @include media-small-desktop {
         padding: 40px 0 30px;
     }
+    @include media-tablet {
+        padding: 30px 0 46px;
+    }
 }
 
 .donate__info-title {
@@ -16,14 +19,24 @@
         padding-right: 162px;
         margin: 0 0 30px;
     }
+    @include media-tablet {
+        @include font ($size: 2.4rem, $weight: 400, $height: 2.9rem);
+        text-align: left;
+        margin: 0 0 20px;
+        padding: 0px;
+    }
 }
 
 .donate__info-text {
-    @include font ($size: 1.6 rem, $weight: 500, $height: 2.2rem);
+    @include font ($size: 1.6rem, $weight: 400, $height: 2.2rem);
     margin: 0 0 40px;
     color: $color-light;
     @include media-small-desktop {
         padding-right: 61px;
+    }
+    @include media-tablet {
+       margin: 0 0 30px;
+       padding: 0px;
     }
 }
 
@@ -33,6 +46,9 @@
     color: #FE9013;
     @include media-small-desktop {
         margin: 0 0 40px;
+    }
+    @include media-tablet {
+        margin: 0 0 30px;
     }
 }
 
@@ -49,6 +65,9 @@
     @include media-small-desktop {
         padding: 20px 65px 46px;
     }
+    @include media-tablet {
+        padding: 30px 20px 30px;
+    }
 }
 
 .donate-content__title {
@@ -63,6 +82,10 @@
     color: $black_blue;
     @include media-small-desktop {
         margin: 10px 0 60px;
+    }
+    @include media-tablet {
+        text-align: center;
+        margin: 20px 0 50px;
     }
 }
 

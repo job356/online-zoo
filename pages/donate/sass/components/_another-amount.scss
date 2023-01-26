@@ -1,6 +1,9 @@
 .another-amount {
     position: relative;
     padding-bottom: 26px;
+    @include media-tablet {
+        padding-bottom: 31px;
+    }
 }
 
 .another-amount__icon {
@@ -10,6 +13,9 @@
     top: 17px;
     right: 10px;
     background-image: url(/assets/icons/donate-icons/dollar-another-amount.svg);
+    @include media-tablet {
+        top: 11px;
+    }
 }
 
 .another-amount__input {
@@ -34,6 +40,9 @@
     }
     &:focus::-webkit-input-placeholder {
         color: #4B9200;
+    }
+    @include media-tablet {
+        padding: 9px 0px 9px 6px;
     }
 }
 

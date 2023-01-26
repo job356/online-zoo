@@ -850,6 +850,11 @@ h1 {
     padding: 40px 0 30px;
   }
 }
+@media (max-width: 999px) {
+  .donate {
+    padding: 30px 0 46px;
+  }
+}
 
 .donate__info-title {
   font-family: "Roboto";
@@ -868,12 +873,24 @@ h1 {
     margin: 0 0 30px;
   }
 }
+@media (max-width: 999px) {
+  .donate__info-title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 2.9rem;
+    text-align: left;
+    margin: 0 0 20px;
+    padding: 0px;
+  }
+}
 
 .donate__info-text {
   font-family: "Roboto";
   font-style: normal;
-  font-size: 1.6 rem;
-  font-weight: 500;
+  font-size: 1.6rem;
+  font-weight: 400;
   line-height: 2.2rem;
   margin: 0 0 40px;
   color: #FFFFFF;
@@ -881,6 +898,12 @@ h1 {
 @media (max-width: 1440px) {
   .donate__info-text {
     padding-right: 61px;
+  }
+}
+@media (max-width: 999px) {
+  .donate__info-text {
+    margin: 0 0 30px;
+    padding: 0px;
   }
 }
 
@@ -898,6 +921,11 @@ h1 {
     margin: 0 0 40px;
   }
 }
+@media (max-width: 999px) {
+  .donate__info-subtitle {
+    margin: 0 0 30px;
+  }
+}
 
 .donate-content {
   display: flex;
@@ -913,6 +941,11 @@ h1 {
 @media (max-width: 1440px) {
   .donate-content {
     padding: 20px 65px 46px;
+  }
+}
+@media (max-width: 999px) {
+  .donate-content {
+    padding: 30px 20px 30px;
   }
 }
 
@@ -938,6 +971,12 @@ h1 {
 @media (max-width: 1440px) {
   .donate-content__subtitle {
     margin: 10px 0 60px;
+  }
+}
+@media (max-width: 999px) {
+  .donate-content__subtitle {
+    text-align: center;
+    margin: 20px 0 50px;
   }
 }
 
@@ -1059,10 +1098,20 @@ h1 {
   align-items: center;
   gap: 21px;
 }
+@media (max-width: 999px) {
+  .radio-flex:nth-child(-n+2) {
+    display: none;
+  }
+}
 
 .another-amount {
   position: relative;
   padding-bottom: 26px;
+}
+@media (max-width: 999px) {
+  .another-amount {
+    padding-bottom: 31px;
+  }
 }
 
 .another-amount__icon {
@@ -1072,6 +1121,11 @@ h1 {
   top: 17px;
   right: 10px;
   background-image: url(/assets/icons/donate-icons/dollar-another-amount.svg);
+}
+@media (max-width: 999px) {
+  .another-amount__icon {
+    top: 11px;
+  }
 }
 
 .another-amount__input {
@@ -1103,6 +1157,11 @@ h1 {
 }
 .another-amount__input:focus::-webkit-input-placeholder {
   color: #4B9200;
+}
+@media (max-width: 999px) {
+  .another-amount__input {
+    padding: 9px 0px 9px 6px;
+  }
 }
 
 .another-amount__input::-webkit-outer-spin-button,
@@ -1136,7 +1195,7 @@ h1 {
 .radio-periodicity__label {
   font-family: "Roboto";
   font-style: normal;
-  font-size: 1.6 rem;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.2rem;
 }
