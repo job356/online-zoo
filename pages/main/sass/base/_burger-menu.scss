@@ -1,3 +1,10 @@
+.burger-menu {
+    display: flex;
+    align-items: center;
+    width: 18px;
+    height: 10px;
+}
+
 %burger-menu__line {
     content: "";
     position: absolute;

@@ -702,6 +702,13 @@ h1 {
   }
 }
 
+.burger-menu {
+  display: flex;
+  align-items: center;
+  width: 18px;
+  height: 10px;
+}
+
 .burger-menu__line:after, .burger-menu__line:before {
   content: "";
   position: absolute;
@@ -745,6 +752,12 @@ h1 {
   .wrapper {
     max-width: 600px;
     padding: 0 20px;
+  }
+}
+@media (max-width: 639px) {
+  .wrapper {
+    max-width: 320px;
+    padding: 0 10px;
   }
 }
 
