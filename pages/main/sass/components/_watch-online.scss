@@ -2,6 +2,7 @@
     background-image: url(/assets/image/backgrounds/Giant\ Panda-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .watch-online_wrapper {
@@ -14,6 +15,9 @@
     @include media-tablet {
         position: relative;
         padding: 0 20px 40px;
+    }
+    @include media-mobile {
+        padding: 0 10px 67.5px;
     }
 }
 
@@ -39,6 +43,14 @@
         top: 10.23px;
         left: 100px;
     }
+    @include media-mobile {
+        width: 119.09px;
+        height: 119.09px;
+        margin-right: 26px;
+        margin-bottom: 0px;
+        top: 22.17px;
+        left: 0px;
+    }
 }
 
 .watch-content__title {
@@ -62,5 +74,10 @@
         @include font ($size: 5.42894rem, $weight: 700, $height: 4.1rem);
         left: 37.3px;
         top: 37.81px;
+    }
+    @include media-mobile {
+        @include font ($size: 2.8rem, $weight: 700, $height: 2.1rem);
+        left: 18.7px;
+        top: 18.95px;
     }
 }

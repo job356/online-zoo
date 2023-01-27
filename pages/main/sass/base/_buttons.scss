@@ -20,6 +20,9 @@
             top: 245px;
             left: 20px;
         }
+        @include media-mobile {
+            display: none;
+        }
     }
     &_feedback {
         border-radius: 5px;

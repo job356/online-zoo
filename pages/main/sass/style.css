@@ -436,6 +436,11 @@ h1 {
     left: 20px;
   }
 }
+@media (max-width: 639px) {
+  .button_watch-online {
+    display: none;
+  }
+}
 .button_feedback {
   border-radius: 5px;
   margin: 0px;
@@ -1070,6 +1075,7 @@ h1 {
   background-image: url(/assets/image/backgrounds/Giant\ Panda-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .watch-online_wrapper {
@@ -1086,6 +1092,11 @@ h1 {
   .watch-online_wrapper {
     position: relative;
     padding: 0 20px 40px;
+  }
+}
+@media (max-width: 639px) {
+  .watch-online_wrapper {
+    padding: 0 10px 67.5px;
   }
 }
 
@@ -1112,6 +1123,16 @@ h1 {
     height: 237.6px;
     top: 10.23px;
     left: 100px;
+  }
+}
+@media (max-width: 639px) {
+  .watch-content__bg-circle {
+    width: 119.09px;
+    height: 119.09px;
+    margin-right: 26px;
+    margin-bottom: 0px;
+    top: 22.17px;
+    left: 0px;
   }
 }
 
@@ -1152,6 +1173,17 @@ h1 {
     line-height: 4.1rem;
     left: 37.3px;
     top: 37.81px;
+  }
+}
+@media (max-width: 639px) {
+  .watch-content__title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 2.1rem;
+    left: 18.7px;
+    top: 18.95px;
   }
 }
 
