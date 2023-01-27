@@ -464,6 +464,11 @@ h1 {
     margin: 0 auto 30px;
   }
 }
+@media (max-width: 639px) {
+  .button_favorite {
+    margin-top: 20px;
+  }
+}
 .button_feedback {
   border-radius: 5px;
   margin: 0px;
@@ -512,6 +517,11 @@ h1 {
   .button-control-position {
     top: 349px;
     left: 245px;
+  }
+}
+@media (max-width: 639px) {
+  .button-control-position {
+    display: none;
   }
 }
 
@@ -834,6 +844,16 @@ h1 {
     grid-template-columns: max-content max-content max-content;
     gap: 92px 30px;
     padding-bottom: 60px;
+  }
+}
+@media (max-width: 639px) {
+  .layout-3-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding-bottom: 0px;
   }
 }
 
@@ -1356,6 +1376,11 @@ h1 {
     background-image: url(/assets/image/backgrounds/palm_foto-tablet.jpg), url(/assets/image/backgrounds/strelitzia\ 1-tablet.jpg);
   }
 }
+@media (max-width: 639px) {
+  .pets {
+    background-image: url(/assets/image/backgrounds/palm_foto-mobile.jpg), url(/assets/image/backgrounds/strelitzia\ 1\ mobile.jpg);
+  }
+}
 
 .wrapper__pets {
   position: relative;
@@ -1370,6 +1395,11 @@ h1 {
   .wrapper__pets {
     overflow: hidden;
     padding: 0 20px 100px;
+  }
+}
+@media (max-width: 639px) {
+  .wrapper__pets {
+    padding: 0 10px 60px;
   }
 }
 
@@ -1471,6 +1501,11 @@ h1 {
     font-weight: 300;
     line-height: 1.4rem;
   }
+}
+
+.pets-mobile-slider {
+  height: 1400px;
+  overflow: scroll;
 }
 
 .pick-and-feed {

@@ -8,6 +8,9 @@
     @include media-tablet {
         background-image: url(/assets/image/backgrounds/palm_foto-tablet.jpg), url(/assets/image/backgrounds/strelitzia\ 1-tablet.jpg);
     }
+    @include media-mobile {
+        background-image: url(/assets/image/backgrounds/palm_foto-mobile.jpg), url(/assets/image/backgrounds/strelitzia\ 1\ mobile.jpg);
+    }
 }
 
 .wrapper__pets {
@@ -19,6 +22,9 @@
     @include media-tablet {
         overflow: hidden;
         padding: 0 20px 100px;
+    }
+    @include media-mobile {
+        padding: 0 10px 60px;
     }
 }
 
@@ -84,4 +90,9 @@
     @include media-tablet {
         @include font ($size: 1.16901rem, $height: 1.4rem, $weight: 300);
     }
+}
+
+.pets-mobile-slider {
+    height: 1400px;
+    overflow: scroll;
 }
