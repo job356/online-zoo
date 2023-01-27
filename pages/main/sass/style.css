@@ -330,7 +330,7 @@ body {
 }
 @media (max-width: 999px) {
   .logo {
-    width: 50px;
+    width: 47px;
   }
 }
 
@@ -389,7 +389,7 @@ h1 {
   .logo__svg_tablet {
     display: inline-block;
     position: absolute;
-    left: 5.54px;
+    left: 3.54px;
     top: 13.99px;
   }
 }
@@ -767,7 +767,7 @@ h1 {
 }
 @media (max-width: 999px) {
   .header {
-    padding: 1px 0;
+    padding: 2px 0;
   }
 }
 
