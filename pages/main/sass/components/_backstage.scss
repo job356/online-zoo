@@ -8,6 +8,10 @@
     @include media-tablet {
         background-image: url(/assets/image/backgrounds/flower_foto_tablet.jpg);
     }
+    @include media-mobile {
+        background-image: url(/assets/image/backgrounds/flower_foto_mobile.jpg);
+        background-position: right 38px;
+    }
 }
 
 .backstage_wrapper {
@@ -17,6 +21,9 @@
     }
     @include media-tablet {
         padding: 60px 20px 80px;
+    }
+    @include media-mobile {
+        padding: 20px 10px 40px;
     }
 }
 
@@ -28,6 +35,9 @@
     @include media-tablet {
         padding: 0px;
         margin-right: 105px;
+    }
+    @include media-mobile {
+        margin-right: 0px;
     }
 }
 
@@ -41,6 +51,10 @@
     @include font ($size: 4.8rem, $weight: 400, $height: 5.8rem);
     color: $black_blue;
     margin: 0 0 17px;
+    @include media-mobile {
+        @include font ($size:2.4rem, $weight: 400, $height: 2.9rem);
+        margin: 0 0 10px;
+    }
 }
 
 .backstage-content__subtitle {
@@ -50,11 +64,18 @@
     @include media-tablet {
         margin: 30px 0 20px;
     }
+    @include media-mobile {
+        @include font ($size: 2.4rem, $weight: 400, $height: 2.9rem);
+        margin: 20px 0 10px;
+    }
 }
 
 .backstage-content__text {
     @include font ($size: 1.6rem, $weight: 400, $height: 2.2rem);
     color: $black_blue;
     margin: 0px;
+    @include media-mobile {
+        @include font ($size: 1.6rem, $weight: 400, $height: 2.1rem);
+    }
 }
 

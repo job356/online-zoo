@@ -24,6 +24,23 @@
             display: none;
         }
     }
+    &_watch-online_mobile {
+        display: none;
+        @include media-mobile {
+            display: block;
+            @include font ($size: 1.6rem, $height: 2.2rem);
+            width: 298px;
+            padding: 16px 0;
+            border: none;
+            text-align: center;
+            text-transform: uppercase;
+            background: $orange;
+            color: $color-light;
+            border-radius: 25px;
+            display: block;
+            margin: 0 auto 30px;
+        }
+    }
     &_feedback {
         border-radius: 5px;
         margin: 0px;
