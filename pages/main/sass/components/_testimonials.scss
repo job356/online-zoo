@@ -13,6 +13,11 @@
         background-image: url(/assets/image/backgrounds/leav_foto-tablet.jpg);
         background-position: right 630px;
     }
+    @include media-mobile {
+        padding-bottom: 60px;
+        background-image: url(/assets/image/backgrounds/leav_foto-mobile.jpg);
+        background-position: right 609px;
+    }
 }
 
 .wrapper__testimonials {
@@ -32,6 +37,10 @@
     @include media-tablet {
         margin: 60px 0 30px;
     }
+    @include media-mobile {
+        @include font ($size: 2.4rem, $weight:400, $height: 2.9rem);
+        margin: 30px 0 20px;
+    }
 }
 
 .testimonial-slider {
@@ -50,6 +59,9 @@
     display: flex;
     gap: 10px;
     padding: 15px 0 10px;
+    @include media-mobile {
+        padding: 10px 0 6px;
+    }
 }
 
 .testimonial__content {
