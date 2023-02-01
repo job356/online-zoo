@@ -93,6 +93,8 @@
 }
 
 .pets-mobile-slider {
-    height: 1400px;
-    overflow: scroll;
+    @include media-mobile {
+        height: 1400px;
+        overflow: hidden;
+    }
 }

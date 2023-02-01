@@ -18,6 +18,9 @@
     @include font ($size:1.6rem, $weight:400, $height: 2.2rem);
     width: 168px;
     margin: 30px 0 0;
+    @include media-mobile {
+        margin: 10px 0 0;
+    }
 }
 
 .icon-next {
@@ -92,5 +95,11 @@
         position: absolute;
         gap: 114.2px;
         top: -17px;
+    }
+    @include media-mobile {
+        top: 300px;
+        left: 77px;
+        transform: rotate(90deg);
+        gap: 166px;
     }
 }
