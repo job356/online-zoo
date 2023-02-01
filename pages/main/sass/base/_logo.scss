@@ -30,6 +30,15 @@ h1 {
     border: 1.18841px solid #FFFFFF;
 }
 
+.logo__title_mobile {
+    @include font ($size: 1.90145rem, $weight:400, $height: 2.3rem);
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    color: $color-light;
+    border: none;
+}
+
 .logo__svg {
     position: absolute;
     left: 11.13px;
@@ -49,10 +58,25 @@ h1 {
     }
 }
 
+.logo__svg_mobile {
+    display: none;
+    @include media-mobile {
+        display: inline-block;
+        position: absolute;
+        top: -2px;
+        left: 74px;
+    }
+}
+
+
 .footer-logo {
     width: 82px;
     padding-bottom: 68px;
     @include media-tablet {
         padding-bottom: 32px;
+    }
+    @include media-mobile {
+        width: 128px;
+        padding-bottom: 0px;
     }
 }
