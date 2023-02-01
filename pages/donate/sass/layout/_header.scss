@@ -21,6 +21,14 @@
         background-position: -300px 32px;
         background-size: cover;
     }
+    @include media-mobile {
+        padding: 1px 0 335px;
+        background: #111115;
+        background-image: url(/assets/image/backgrounds/panda_bg-mobile.jpg);
+        background-repeat: no-repeat;
+        background-position: -47px 32px;
+        background-size: cover;
+    }
 }
 
 .header__wrapper {
