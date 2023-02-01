@@ -7,6 +7,9 @@
     @include media-tablet {
         padding: 30px 0 46px;
     }
+    @include media-mobile {
+        padding: 30px 0 21px;
+    }
 }
 
 .donate__info-title {
@@ -50,6 +53,9 @@
     @include media-tablet {
         margin: 0 0 30px;
     }
+    @include media-mobile {
+        @include font ($size: 2.4rem, $weight: 400, $height: 2.9rem);
+    }
 }
 
 .donate-content {
@@ -68,12 +74,18 @@
     @include media-tablet {
         padding: 30px 20px 30px;
     }
+    @include media-mobile {
+        padding: 20px 10px;
+    }
 }
 
 .donate-content__title {
     @include font ($size: 4.8rem, $weight: 400, $height: 5.8rem);
     margin: 0px;
     color: #FE9013;
+    @include media-mobile {
+        @include font ($size: 2.4rem, $weight: 400, $height: 2.9rem);
+    }
 }
 
 .donate-content__subtitle {
@@ -86,6 +98,10 @@
     @include media-tablet {
         text-align: center;
         margin: 20px 0 50px;
+        @include media-mobile {
+            @include font ($size: 1.6rem, $weight: 400, $height: 2.2rem);
+            margin: 10px 0;
+        }
     }
 }
 
@@ -99,6 +115,10 @@
     text-align: center;
     text-transform: uppercase;
     color: #000000;
+    @include media-mobile {
+        @include font ($size: 4.06015rem, $weight: 500, $height: 3.2rem);
+        margin: 59px 0 7px;
+    }
 }
 
 .amount-values__caption {
@@ -106,10 +126,17 @@
     margin: 0px;
     text-align: center;
     color: $black_blue;
+    @include media-mobile {
+        @include font ($size: 0.902255rem, $weight: 400, $height: 1.3rem);
+    }
 }
 
 .amount-values__x-icon {
     position: absolute;
     top: 130px;
     left: 170px;
+    @include media-mobile {
+        top: 73px;
+        left: 76px;
+    }
 }

@@ -42,4 +42,7 @@
 .button__subtitle {
     @include font ($size: 1.6rem, $weight: 400, $height: 2.2rem);
     margin: 30px 0 0;
+    @include media-mobile {
+        text-align: center;
+    }
 }

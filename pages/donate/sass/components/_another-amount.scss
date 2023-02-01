@@ -3,6 +3,9 @@
     padding-bottom: 26px;
     @include media-tablet {
         padding-bottom: 31px;
+        @include media-mobile {
+            padding-bottom: 25px;
+        }
     }
 }
 

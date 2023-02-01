@@ -1,27 +1,3 @@
-.step__border {
-    background: $orange;
-    padding: 1px;
-    border-radius: 5px;
-}
-
-.step__icon {
-    width: 168px;
-    height: 168px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    background: $color-light;
-}
-
-.step__caption {
-    width: 168px;
-}
-
-.icon-next {
-    padding-top: 62px;
-}
-
 .social-media__link {
     width: 111px;
     height: 26px;
@@ -78,5 +54,12 @@
         &:active {
             background-image: url(/assets/icons/social-media/youtube-icon-tablet_hover.svg);
         }
+    }
+}
+
+.amount-icon__animal {
+    @include media-mobile {
+        width: 160px;
+        height: 138px;
     }
 }

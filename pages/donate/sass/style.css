@@ -376,29 +376,10 @@ body {
   line-height: 2.2rem;
   margin: 30px 0 0;
 }
-
-.step__border {
-  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
-  padding: 1px;
-  border-radius: 5px;
-}
-
-.step__icon {
-  width: 168px;
-  height: 168px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  background: #FFFFFF;
-}
-
-.step__caption {
-  width: 168px;
-}
-
-.icon-next {
-  padding-top: 62px;
+@media (max-width: 639px) {
+  .button__subtitle {
+    text-align: center;
+  }
 }
 
 .social-media__link {
@@ -459,6 +440,13 @@ body {
 }
 .social-media__link.you-tube-icon_tablet:active {
   background-image: url(/assets/icons/social-media/youtube-icon-tablet_hover.svg);
+}
+
+@media (max-width: 639px) {
+  .amount-icon__animal {
+    width: 160px;
+    height: 138px;
+  }
 }
 
 .logo {
@@ -626,6 +614,12 @@ h1 {
   justify-content: center;
   gap: 64px;
   padding-bottom: 48px;
+}
+@media (max-width: 639px) {
+  .layout-2-column {
+    gap: 50px;
+    padding-bottom: 5px;
+  }
 }
 
 .footer-column {
@@ -949,6 +943,11 @@ h1 {
     padding: 30px 0 46px;
   }
 }
+@media (max-width: 639px) {
+  .donate {
+    padding: 30px 0 21px;
+  }
+}
 
 .donate__info-title {
   font-family: "Roboto";
@@ -1020,6 +1019,15 @@ h1 {
     margin: 0 0 30px;
   }
 }
+@media (max-width: 639px) {
+  .donate__info-subtitle {
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 2.9rem;
+  }
+}
 
 .donate-content {
   display: flex;
@@ -1042,6 +1050,11 @@ h1 {
     padding: 30px 20px 30px;
   }
 }
+@media (max-width: 639px) {
+  .donate-content {
+    padding: 20px 10px;
+  }
+}
 
 .donate-content__title {
   font-family: "Roboto";
@@ -1051,6 +1064,15 @@ h1 {
   line-height: 5.8rem;
   margin: 0px;
   color: #FE9013;
+}
+@media (max-width: 639px) {
+  .donate-content__title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 2.9rem;
+  }
 }
 
 .donate-content__subtitle {
@@ -1073,6 +1095,16 @@ h1 {
     margin: 20px 0 50px;
   }
 }
+@media (max-width: 999px) and (max-width: 639px) {
+  .donate-content__subtitle {
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    margin: 10px 0;
+  }
+}
 
 .amount {
   position: relative;
@@ -1089,6 +1121,16 @@ h1 {
   text-transform: uppercase;
   color: #000000;
 }
+@media (max-width: 639px) {
+  .amount-values__days {
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 4.06015rem;
+    font-weight: 500;
+    line-height: 3.2rem;
+    margin: 59px 0 7px;
+  }
+}
 
 .amount-values__caption {
   font-family: "Roboto";
@@ -1100,16 +1142,36 @@ h1 {
   text-align: center;
   color: #333B41;
 }
+@media (max-width: 639px) {
+  .amount-values__caption {
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 0.902255rem;
+    font-weight: 400;
+    line-height: 1.3rem;
+  }
+}
 
 .amount-values__x-icon {
   position: absolute;
   top: 130px;
   left: 170px;
 }
+@media (max-width: 639px) {
+  .amount-values__x-icon {
+    top: 73px;
+    left: 76px;
+  }
+}
 
 .amount-input {
   width: 100%;
   padding-bottom: 33px;
+}
+@media (max-width: 639px) {
+  .amount-input {
+    padding-bottom: 15px;
+  }
 }
 
 .amount-input__title {
@@ -1129,6 +1191,11 @@ h1 {
   background: #404950;
   border-radius: 2px;
 }
+@media (max-width: 639px) {
+  .amount-input__background {
+    padding: 6px 12px;
+  }
+}
 
 .amount-input__line {
   position: relative;
@@ -1136,6 +1203,12 @@ h1 {
   width: 100%;
   height: 2px;
   background: #72828E;
+}
+@media (max-width: 639px) {
+  .amount-input__line {
+    height: 1px;
+    left: 0px;
+  }
 }
 
 .amount-input__radio {
@@ -1157,6 +1230,19 @@ h1 {
   top: -15px;
   left: -15px;
 }
+@media (max-width: 639px) {
+  .amount-input__radio {
+    width: 5px;
+    height: 5px;
+  }
+  .amount-input__radio:checked::after {
+    content: url(/assets/icons/donate-icons/roller_icon-mobile.svg);
+    position: absolute;
+    height: 20px;
+    top: -7.65px;
+    left: -7.6px;
+  }
+}
 
 .price {
   font-family: "Roboto";
@@ -1173,6 +1259,18 @@ h1 {
   background-position: 0 50%;
   cursor: pointer;
 }
+@media (max-width: 639px) {
+  .price {
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    padding-left: 6px;
+    background-size: 5px 10px;
+    cursor: auto;
+  }
+}
 
 [type=radio]:checked + .price {
   color: #FE9013;
@@ -1184,6 +1282,11 @@ h1 {
   justify-content: space-between;
   position: relative;
   top: -18px;
+}
+@media (max-width: 639px) {
+  .radio-wrapper {
+    top: -9px;
+  }
 }
 
 .radio-flex {
@@ -1197,6 +1300,14 @@ h1 {
     display: none;
   }
 }
+@media (max-width: 639px) {
+  .radio-flex {
+    gap: 11px;
+  }
+  .radio-flex:nth-child(-n+3) {
+    display: none;
+  }
+}
 
 .another-amount {
   position: relative;
@@ -1205,6 +1316,11 @@ h1 {
 @media (max-width: 999px) {
   .another-amount {
     padding-bottom: 31px;
+  }
+}
+@media (max-width: 999px) and (max-width: 639px) {
+  .another-amount {
+    padding-bottom: 25px;
   }
 }
 
