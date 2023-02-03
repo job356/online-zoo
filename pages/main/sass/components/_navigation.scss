@@ -1,3 +1,26 @@
+.menu-pop-up-navigation {
+    @include font ($size: 1.6rem, $weight: 400, $height: 2.2rem);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+    margin: 0px;
+    padding: 0px; 
+}
+
+.menu-pop-up-navigation__item {
+    color: #333B41;
+    text-decoration: none;
+    &:active {
+        color: #FE9013;
+    }
+    &_inactive {
+        color: #FE9013;
+        text-decoration: none;
+        pointer-events: none;
+    }
+}
+
 .header-navigation {
     @include media-tablet {
         display: none;

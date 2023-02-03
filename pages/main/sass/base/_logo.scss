@@ -1,3 +1,25 @@
+.logo-menu-pop-up {
+    display: inline-block;
+    position: relative;
+    width: 65.6px;
+    text-decoration: none;
+}
+
+.logo-menu-pop-up__title {
+    @include font ($size: 1.52116rem, $weight: 400, $height: 1.8rem);
+    margin: 0px;
+    padding: 2.84px 3.8px;
+    text-align: center;
+    color: #FE9013;
+    border: 0.950725px solid #FE9013;
+}
+
+.logo-menu-pop-up__svg {
+    position: absolute;
+    left: 7.7px;
+    top: 18.91px;
+}
+
 .logo {
     width: 82px;
     position: relative;

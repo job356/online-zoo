@@ -1,0 +1,16 @@
+.menu-pop-up {
+    position: absolute;
+    width: -webkit-fill-available;
+    z-index: 1;
+    background: #FFFFFF;
+}
+
+.menu-pop-up__warapper {
+    padding: 20px 20px 40px;
+}
+
+.logo-x-icon-block {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
